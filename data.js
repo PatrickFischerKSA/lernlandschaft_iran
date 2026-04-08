@@ -96,6 +96,35 @@ const MODULES = [
         successThreshold: 2,
         modelAnswer:
           "Iran ist nicht einfach arabisch, weil das Land persischsprachig ist, auf eine vorislamische Geschichte zurückgreift und religiös vor allem schiitisch geprägt ist."
+      },
+      {
+        id: "mq-perserreich-3",
+        title: "Schia als Staatsprägung",
+        type: "short-text",
+        challenge: "Zusatzcheck",
+        prompt:
+          "Warum ist die schiitische Prägung Irans politisch wichtiger als ein bloßes Religionsetikett?",
+        help:
+          "Verbinde Staat, Identität und Stellung in der Region.",
+        placeholder: "Die schiitische Prägung ist politisch wichtig, weil ...",
+        sourceIds: ["r-perserreich-terrax", "r-perserreich-arte-playlist", "r-perserreich-bpb"],
+        conceptGroups: [
+          {
+            label: "prägt staatliche oder historische Identität",
+            variants: ["identität", "staat", "staatsprägend", "historisch", "eigenständigkeit", "tradition"]
+          },
+          {
+            label: "unterscheidet Iran von vielen Nachbarn",
+            variants: ["nachbarn", "abgrenzung", "eigenständig", "region", "nicht sunnitisch", "anders"]
+          },
+          {
+            label: "wirkt in Politik oder Geopolitik hinein",
+            variants: ["politik", "geopolitik", "regional", "macht", "allianzen", "konflikte"]
+          }
+        ],
+        successThreshold: 2,
+        modelAnswer:
+          "Die schiitische Prägung ist politisch wichtig, weil sie Irans historische und staatliche Identität mitformt, das Land von vielen Nachbarn unterscheidet und bis heute in regionale Macht- und Konfliktlagen hineinwirkt."
       }
     ],
     resources: [
@@ -206,7 +235,7 @@ const MODULES = [
         prompt:
           "Ordne die großen Entwicklungsschritte von der antiken Machtstellung bis zur frühen Pahlavi-Monarchie.",
         help:
-          "Beginne mit dem antiken Großreich und ende mit Reza Schahs Modernisierungspolitik.",
+          "Beginne mit dem antiken Großreich und ende mit dem Ende von Reza Schahs Herrschaft unter Besatzungsdruck.",
         sourceIds: ["r-perserreich-terrax", "r-perserreich-bpb"],
         items: [
           {
@@ -231,13 +260,13 @@ const MODULES = [
           },
           {
             id: "occupation-1941",
-            label: "1941 endet Reza Schahs Herrschaft unter dem Druck britischer und sowjetischer Besatzung.",
+            label: "Unter dem Druck britischer und sowjetischer Besatzung endet Reza Schahs Herrschaft.",
             detail: "Damit beginnt die moderne Konfliktgeschichte der nächsten Station."
           }
         ],
         correctOrder: ["achaemenid", "arab-conquest", "safavid", "pahlavi-1925", "occupation-1941"],
         explanation:
-          "Die Reihenfolge zeigt, dass Irans Gegenwart nicht erst mit der Revolution von 1979 verständlich wird. Kulturelle Tiefenlinien, religiöse Prägung und moderne Staatsbildung greifen ineinander."
+          "Die Reihenfolge zeigt, dass Irans Gegenwart nicht erst mit der Islamischen Republik verständlich wird. Kulturelle Tiefenlinien, religiöse Prägung und moderne Staatsbildung greifen ineinander."
       },
       {
         id: "q-perserreich-4",
@@ -296,6 +325,34 @@ const MODULES = [
         ],
         modelAnswer:
           "Iran lässt sich nur verstehen, wenn Kulturgeschichte und Geopolitik zusammengedacht werden. Das Land beruft sich auf eine lange persische Tradition, ist religiös eigenständig geprägt und liegt zugleich an einem strategischen Schlüsselraum. Erst diese Verbindung erklärt, warum Iran innenpolitisch identitätsstark und außenpolitisch so wirkmächtig ist."
+      },
+      {
+        id: "q-perserreich-6",
+        type: "short-text",
+        challenge: "Vertiefung",
+        prompt:
+          "Warum führen vorschnelle Gleichsetzungen wie 'Iran ist einfach Nahost' oder 'Iran ist einfach islamisch' oft zu Fehlurteilen?",
+        help:
+          "Verbinde Raumlage, Kulturgeschichte und religiöse Eigenprägung.",
+        placeholder: "Die Gleichsetzungen führen zu Fehlurteilen, weil ...",
+        sourceIds: ["r-perserreich-terrax", "r-perserreich-arte-playlist", "r-perserreich-bpb"],
+        conceptGroups: [
+          {
+            label: "Iran hat eine eigenständige persische Geschichte",
+            variants: ["persisch", "eigenständige geschichte", "perserreich", "kulturraum", "identität", "lange geschichte"]
+          },
+          {
+            label: "Iran liegt zwischen mehreren Großräumen",
+            variants: ["zwischen mehreren räumen", "nahost", "zentralasien", "kaukasus", "indischer ozean", "raumlage"]
+          },
+          {
+            label: "Religion erklärt Iran nicht allein",
+            variants: ["nicht nur religion", "schia", "politik", "geopolitik", "staat", "mehrdimensional"]
+          }
+        ],
+        successThreshold: 2,
+        modelAnswer:
+          "Die Gleichsetzungen führen zu Fehlurteilen, weil Iran eine eigenständige persische Geschichte und Kultur hat, zwischen mehreren Großräumen liegt und politisch nicht allein über Religion erklärt werden kann."
       }
     ]
   },
@@ -338,6 +395,52 @@ const MODULES = [
       src: "https://i.ytimg.com/vi/rIsOLuvXM7I/hqdefault.jpg",
       alt: "Vorschaubild zum ZDF-Video Iran und USA"
     },
+    visualDossierTitle: "Bilder von Souveränität, Öl und Intervention",
+    visualDossierIntro:
+      "Diese Bildsektion hält die Station bewusst an zwei Polen fest: Mossadegh als Symbolfigur nationaler Selbstbestimmung und der Konflikt mit westlicher Einflussnahme als länger wirkende politische Erinnerung.",
+    visualDossier: [
+      {
+        src:
+          "https://commons.wikimedia.org/wiki/Special:Redirect/file/Portrait_of_Mohammad_Mosaddegh_-_circa_1952.jpg",
+        alt: "Mohammad Mossadegh im Porträt",
+        title: "Mossadegh als Erinnerungsfigur",
+        caption:
+          "Porträt Mohammad Mossadeghs als Bezugspunkt für Verstaatlichung, Parlamentarismus und nationale Souveränität.",
+        whyItMatters:
+          "Arbeitsnutzen: Das Bild hilft, die Station nicht nur als Ölkonflikt, sondern auch als Demokratie- und Symbolgeschichte zu lesen.",
+        imageFit: "cover",
+        imagePosition: "center top"
+      },
+      {
+        src: "https://i.ytimg.com/vi/rIsOLuvXM7I/hqdefault.jpg",
+        alt: "Vorschaubild zum Video über die Konfliktgeschichte zwischen Iran und den USA",
+        title: "Der Konflikt reicht weiter zurück",
+        caption:
+          "Das Video führt den Blick weg von einer reinen Gegenwartswahrnehmung und zurück zur Vorgeschichte der Spannungen zwischen Iran und den USA.",
+        whyItMatters:
+          "Arbeitsnutzen: Das Bild markiert den Schritt von der Einzelperson zur langen Konfliktlinie."
+      }
+    ],
+    actorFocus: {
+      title: "Schlüsselfigur dieser Station",
+      intro:
+        "Mossadegh steht in dieser Station nicht nur als Politiker, sondern als Erinnerungsfigur für Souveränität, parlamentarische Legitimität und den Konflikt zwischen nationaler Selbstbestimmung und ausländischer Einflussnahme."
+    },
+    actors: [
+      {
+        name: "Mohammad Mossadegh",
+        role: "Ministerpräsident und Symbolfigur nationaler Souveränität",
+        lens:
+          "An Mossadegh lassen sich Ölpolitik, parlamentarischer Anspruch, antikoloniale Deutung und die Langzeitwirkung des Putsches zugleich zeigen.",
+        whyHere:
+          "Für diese Station ist er zentral, weil sich an seiner Person die Verbindung von Demokratiehoffnung, Ressourcenpolitik und geopolitischer Intervention besonders gut nachvollziehen lässt.",
+        imageSrc:
+          "https://commons.wikimedia.org/wiki/Special:Redirect/file/Portrait_of_Mohammad_Mosaddegh_-_circa_1952.jpg",
+        imageAlt: "Mohammad Mossadegh im Porträt",
+        imageFit: "cover",
+        imagePosition: "center top"
+      }
+    ],
     miniQuestions: [
       {
         id: "mq-mossadegh-1",
@@ -396,6 +499,35 @@ const MODULES = [
         successThreshold: 2,
         modelAnswer:
           "1953 bleibt wichtig, weil westliche Akteure den Sturz Mossadeghs unterstützten, damit eine demokratisch legitimierte Regierung beseitigt wurde und daraus ein bis heute wirksames Misstrauen gegenüber dem Westen entstand."
+      },
+      {
+        id: "mq-mossadegh-3",
+        title: "Innenkonflikt und Außenintervention",
+        type: "short-text",
+        challenge: "Zusatzcheck",
+        prompt:
+          "Warum greift es zu kurz, den Sturz Mossadeghs nur als ausländischen Eingriff oder nur als inneriranischen Machtkampf zu beschreiben?",
+        help:
+          "Verbinde Monarchie, Elitenkonflikt, Geheimdienste und Ölinteressen.",
+        placeholder: "Es greift zu kurz, weil ...",
+        sourceIds: ["r-mossadegh-bpb", "r-mossadegh-zdf", "r-mossadegh-terrax"],
+        conceptGroups: [
+          {
+            label: "inneriranische Machtkonflikte spielten mit hinein",
+            variants: ["schah", "eliten", "innenpolitik", "machtkampf", "monarchie", "konservative kräfte"]
+          },
+          {
+            label: "ausländische Intervention war zentral",
+            variants: ["cia", "britannien", "ausländische intervention", "geheimdienst", "westen", "einmischung"]
+          },
+          {
+            label: "Öl und Geopolitik verbanden beide Ebenen",
+            variants: ["öl", "geopolitik", "interessen", "ressourcen", "kalter krieg", "souveränität"]
+          }
+        ],
+        successThreshold: 2,
+        modelAnswer:
+          "Es greift zu kurz, weil im Iran selbst Machtkämpfe um Monarchie und Parlament liefen, der Sturz aber zugleich massiv von ausländischen Interessen und Interventionen mitgeprägt wurde. Gerade Öl und Geopolitik verbanden beide Ebenen."
       }
     ],
     resources: [
@@ -504,9 +636,9 @@ const MODULES = [
         type: "drag-order",
         challenge: "Chronologie",
         prompt:
-          "Ordne die Entwicklung von der Besatzung 1941 bis zum gefestigten Schah-Staat nach dem Putsch.",
+          "Ordne die Entwicklung von der Besatzung bis zum gefestigten Schah-Staat nach dem Putsch.",
         help:
-          "Beginne mit der Besatzung und ende mit dem gestärkten Schah nach 1953.",
+          "Beginne mit der Besatzung und ende mit dem gestärkten Schah nach dem Regierungssturz.",
         sourceIds: ["r-mossadegh-bpb", "r-mossadegh-zdf"],
         items: [
           {
@@ -526,7 +658,7 @@ const MODULES = [
           },
           {
             id: "coup-1953",
-            label: "Mossadegh wird 1953 durch einen von der CIA unterstützten Staatsstreich gestürzt.",
+            label: "Mossadegh wird durch einen von der CIA unterstützten Staatsstreich gestürzt.",
             detail: "Der politische Kurs Irans wird gewaltsam umgelenkt."
           },
           {
@@ -543,7 +675,7 @@ const MODULES = [
           "shah-strengthened"
         ],
         explanation:
-          "Die Reihenfolge macht sichtbar, dass 1953 nicht aus dem Nichts kam: Besatzung, Ölkonflikt, Souveränitätsanspruch und ausländische Intervention führten direkt in die neue Autorität des Schahs."
+          "Die Reihenfolge macht sichtbar, dass der Putsch nicht aus dem Nichts kam: Besatzung, Ölkonflikt, Souveränitätsanspruch und ausländische Intervention führten direkt in die neue Autorität des Schahs."
       },
       {
         id: "q-mossadegh-4",
@@ -602,6 +734,34 @@ const MODULES = [
         ],
         modelAnswer:
           "Der Sturz Mossadeghs bleibt zentral, weil hier aus iranischer Sicht deutlich wurde, dass nationale Souveränität und demokratische Politik durch ausländische Machtinteressen gebrochen werden konnten. Gerade weil Öl, Geheimdienste und Regimefrage zusammenwirkten, wurde 1953 zu einem dauerhaften Bezugspunkt für Misstrauen gegenüber dem Westen."
+      },
+      {
+        id: "q-mossadegh-6",
+        type: "short-text",
+        challenge: "Deutung",
+        prompt:
+          "Warum wurde Mossadegh später nicht nur als gescheiterter Politiker, sondern als politische Erinnerungsfigur so wichtig?",
+        help:
+          "Gesucht ist die Wirkung seiner Niederlage auf spätere Deutungen von Demokratie, Souveränität und Westen.",
+        placeholder: "Mossadegh wurde zur Erinnerungsfigur, weil ...",
+        sourceIds: ["r-mossadegh-zdf", "r-mossadegh-bpb", "r-mossadegh-terrax"],
+        conceptGroups: [
+          {
+            label: "steht für verlorene Demokratiechance",
+            variants: ["demokratie", "verlorene chance", "parlamentarisch", "hoffnung", "legitime politik"]
+          },
+          {
+            label: "steht für nationale Souveränität",
+            variants: ["souveränität", "selbstbestimmung", "unabhängigkeit", "nationale würde", "eigenständigkeit"]
+          },
+          {
+            label: "sein Sturz nährte Misstrauen gegen äußere Mächte",
+            variants: ["misstrauen", "westen", "cia", "intervention", "ausländische macht", "erinnerung"]
+          }
+        ],
+        successThreshold: 2,
+        modelAnswer:
+          "Mossadegh wurde zur Erinnerungsfigur, weil sich an ihm eine verlorene Demokratiechance, der Anspruch auf nationale Souveränität und das Misstrauen gegenüber äußerer Intervention bündeln. Gerade seine Niederlage machte ihn politisch so wirksam."
       }
     ]
   },
@@ -644,6 +804,52 @@ const MODULES = [
       src: "https://i.ytimg.com/vi/6FlPHpCEwL8/hqdefault.jpg",
       alt: "Vorschaubild zum Überblicksvideo über Iran"
     },
+    visualDossierTitle: "Bilder von Monarchie, Reform und Entfremdung",
+    visualDossierIntro:
+      "Die Bildsektion hält die Herrschaft des Schahs bewusst widersprüchlich: öffentliche Modernisierung, monarchische Selbstinszenierung und wachsender Abstand zur Gesellschaft gehören hier zusammen.",
+    visualDossier: [
+      {
+        src:
+          "https://commons.wikimedia.org/wiki/Special:Redirect/file/Mohammad_Reza_Pahlavi_portrait_(1).jpg",
+        alt: "Mohammad Reza Pahlavi im Porträt",
+        title: "Der Schah als Herrschaftsbild",
+        caption:
+          "Porträt Mohammad Reza Pahlavis als Symbol für Modernisierung von oben, Monarchie und starke Westbindung.",
+        whyItMatters:
+          "Arbeitsnutzen: Das Bild hilft, Reformpolitik und autoritäre Herrschaft an einer Person zusammenzudenken.",
+        imageFit: "cover",
+        imagePosition: "center top"
+      },
+      {
+        src: "https://i.ytimg.com/vi/6FlPHpCEwL8/hqdefault.jpg",
+        alt: "Vorschaubild zum Überblicksvideo über Iran",
+        title: "Von Reform zur Revolution",
+        caption:
+          "Das Überblicksvideo verbindet die Pahlavi-Zeit mit der Revolution und macht die Brüche der Herrschaft besonders sichtbar.",
+        whyItMatters:
+          "Arbeitsnutzen: Das Bild markiert den Übergang von Stabilisierung nach dem Putsch zur späteren Revolutionsdynamik."
+      }
+    ],
+    actorFocus: {
+      title: "Schlüsselfigur dieser Station",
+      intro:
+        "Mohammad Reza Pahlavi bündelt die Grundspannung dieser Station: ambitionierte Modernisierung, demonstrative Monarchie, enge Westbindung und ein immer härterer autoritärer Zugriff auf Gesellschaft und Opposition."
+    },
+    actors: [
+      {
+        name: "Mohammad Reza Pahlavi",
+        role: "Schah von Iran und Träger der Pahlavi-Monarchie",
+        lens:
+          "An ihm wird sichtbar, wie Modernisierung von oben, Repressionsapparat, symbolische Selbstdarstellung und politische Entfremdung zusammenwirkten.",
+        whyHere:
+          "Für diese Station ist er zentral, weil sich an seiner Herrschaft erklären lässt, warum Reformen das Regime nicht stabilisierten, sondern die Revolutionsdynamik teilweise mitbeschleunigten.",
+        imageSrc:
+          "https://commons.wikimedia.org/wiki/Special:Redirect/file/Mohammad_Reza_Pahlavi_portrait_(1).jpg",
+        imageAlt: "Mohammad Reza Pahlavi im Porträt",
+        imageFit: "cover",
+        imagePosition: "center top"
+      }
+    ],
     miniQuestions: [
       {
         id: "mq-pahlavi-1",
@@ -702,6 +908,35 @@ const MODULES = [
         successThreshold: 2,
         modelAnswer:
           "SAVAK untergrub die Legitimität des Regimes, weil politische Gegner überwacht und unterdrückt wurden, Angst entstand und der Schah dadurch immer stärker als autoritärer Herrscher wahrgenommen wurde."
+      },
+      {
+        id: "mq-pahlavi-3",
+        title: "Westbindung als Problem",
+        type: "short-text",
+        challenge: "Zusatzcheck",
+        prompt:
+          "Warum wurde die enge Westbindung des Schahs für viele Gegnerinnen und Gegner zu einem politischen Angriffspunkt?",
+        help:
+          "Verbinde Abhängigkeit, Legitimität und die Erinnerung an 1953.",
+        placeholder: "Die Westbindung wurde zum Angriffspunkt, weil ...",
+        sourceIds: ["r-pahlavi-zdf", "r-pahlavi-bpb", "r-pahlavi-terrax"],
+        conceptGroups: [
+          {
+            label: "wirkte abhängig oder fremdbestimmt",
+            variants: ["abhängig", "fremdbestimmt", "usa", "westen", "nicht souverän", "westbindung"]
+          },
+          {
+            label: "verstärkte den Legitimitätsverlust des Regimes",
+            variants: ["legitimität", "kritik", "unbeliebt", "regime", "entfremdung", "misstrauen"]
+          },
+          {
+            label: "stand im Schatten des Putsches gegen Mossadegh",
+            variants: ["mossadegh", "1953", "putsch", "vorgeschichte", "erinnerung", "intervention"]
+          }
+        ],
+        successThreshold: 2,
+        modelAnswer:
+          "Die Westbindung wurde zum Angriffspunkt, weil der Schah vielen als abhängig und fremdbestimmt erschien, dadurch an Legitimität verlor und seine Nähe zum Westen im Schatten des Putsches gegen Mossadegh zusätzlich belastet war."
       }
     ],
     resources: [
@@ -810,39 +1045,39 @@ const MODULES = [
         type: "drag-order",
         challenge: "Chronologie",
         prompt:
-          "Ordne die Entwicklung von der neuen Stabilisierung nach 1953 bis zum Sturz des Schahs 1979.",
+          "Ordne die Entwicklung von der neuen Stabilisierung nach dem Putsch bis zum Sturz des Schahs.",
         help:
           "Beginne mit dem gestärkten Schah nach dem Putsch und ende mit seiner Flucht ins Exil.",
         sourceIds: ["r-pahlavi-bpb", "r-pahlavi-terrax", "r-pahlavi-zdf"],
         items: [
           {
             id: "post-coup",
-            label: "Nach dem Putsch 1953 wird der Schah politisch gestärkt.",
+            label: "Nach dem Putsch wird der Schah politisch gestärkt.",
             detail: "Die Monarchie wird enger mit westlicher Unterstützung verbunden."
           },
           {
             id: "white-revolution",
-            label: "1963 startet die Weiße Revolution mit Reformen von oben.",
+            label: "Die Weiße Revolution startet mit Reformen von oben.",
             detail: "Modernisierung und Konflikte wachsen zugleich."
           },
           {
             id: "khomeini-exile",
-            label: "1964 wird Chomeini ins Exil geschickt.",
+            label: "Chomeini wird ins Exil geschickt.",
             detail: "Ein wichtiger religiöser Gegner verschwindet nicht, sondern gewinnt von außen weiter Einfluss."
           },
           {
             id: "persepolis-1971",
-            label: "1971 inszeniert der Schah die Monarchie in Persepolis mit großem Prunk.",
+            label: "Der Schah inszeniert die Monarchie in Persepolis mit großem Prunk.",
             detail: "Die Kritik an Elitenferne wächst."
           },
           {
             id: "black-friday",
-            label: "1978 eskalieren die Proteste; der Schwarze Freitag wird zum Wendepunkt.",
+            label: "Die Proteste eskalieren; der Schwarze Freitag wird zum Wendepunkt.",
             detail: "Repression vertieft die Krise der Monarchie."
           },
           {
             id: "shah-exile",
-            label: "Im Januar 1979 verlässt der Schah Iran.",
+            label: "Der Schah verlässt Iran.",
             detail: "Die Monarchie bricht zusammen."
           }
         ],
@@ -914,6 +1149,34 @@ const MODULES = [
         ],
         modelAnswer:
           "Die Herrschaft Mohammad Reza Pahlavis war beides zugleich: Modernisierung und Autoritarismus. Reformen veränderten Staat und Gesellschaft, doch sie wurden von oben durchgesetzt, durch Repression abgesichert und politisch kaum legitimiert. Gerade diese Spannung erklärt, warum Modernisierung den Sturz des Regimes nicht verhindern konnte."
+      },
+      {
+        id: "q-pahlavi-6",
+        type: "short-text",
+        challenge: "Vertiefung",
+        prompt:
+          "Warum reichte wirtschaftliche und soziale Modernisierung allein nicht aus, um die Herrschaft des Schahs dauerhaft zu stabilisieren?",
+        help:
+          "Verbinde Reformen mit politischer Teilhabe, Repression und gesellschaftlicher Wahrnehmung.",
+        placeholder: "Modernisierung reichte nicht aus, weil ...",
+        sourceIds: ["r-pahlavi-terrax", "r-pahlavi-bpb", "r-pahlavi-zdf"],
+        conceptGroups: [
+          {
+            label: "Modernisierung ersetzte keine politische Beteiligung",
+            variants: ["keine beteiligung", "keine mitsprache", "politische teilhabe", "nicht demokratisch", "von oben"]
+          },
+          {
+            label: "Repression zerstörte Vertrauen",
+            variants: ["repression", "savak", "angst", "unterdrückung", "vertrauen verloren", "autoritäre herrschaft"]
+          },
+          {
+            label: "soziale und kulturelle Spannungen blieben bestehen",
+            variants: ["spannungen", "ungleichheit", "gesellschaft", "kulturell", "religiös", "entfremdung"]
+          }
+        ],
+        successThreshold: 2,
+        modelAnswer:
+          "Modernisierung reichte nicht aus, weil sie politische Beteiligung nicht ersetzte, durch Repression begleitet wurde und soziale wie kulturelle Spannungen nicht auflöste. Fortschritt ohne Legitimität blieb instabil."
       }
     ]
   },
@@ -956,6 +1219,77 @@ const MODULES = [
       src: "https://i.ytimg.com/vi/_qvxZ32aOnE/hqdefault.jpg",
       alt: "Vorschaubild zur ARTE-Doku über 1979 und den Aufstieg des Islamismus"
     },
+    visualDossierTitle: "Bilder von Revolution, System und begrenzter Öffnung",
+    visualDossierIntro:
+      "Die Bildsektion dieser Station soll keine Einheitsgeschichte erzählen. Chomeini steht für Gründung und ideologische Verdichtung, Chatami für Reformhoffnungen und die spürbaren Grenzen des Systems.",
+    visualDossier: [
+      {
+        src:
+          "https://commons.wikimedia.org/wiki/Special:Redirect/file/Portrait_of_Ruhollah_Khomeini.jpg",
+        alt: "Ruhollah Chomeini im Porträt",
+        title: "Chomeini als Gründungsfigur",
+        caption:
+          "Porträt Ruhollah Chomeinis als Symbol für Revolution, religiöse Legitimation und den Aufbau der Islamischen Republik.",
+        whyItMatters:
+          "Arbeitsnutzen: Das Bild markiert den Systembruch und gehört direkt zur Frage nach Herrschaft und Ideologie.",
+        imageFit: "cover",
+        imagePosition: "center top"
+      },
+      {
+        src:
+          "https://commons.wikimedia.org/wiki/Special:Redirect/file/Mohammad_Khatami_-_December_11,_2007.jpg",
+        alt: "Mohammad Chatami im Porträt",
+        title: "Chatami als Reformsymbol",
+        caption:
+          "Porträt Mohammad Chatamis als Bezugspunkt für Öffnungshoffnungen, Zivilgesellschaft und blockierte Reformen innerhalb des Systems.",
+        whyItMatters:
+          "Arbeitsnutzen: Das Bild verhindert, dass die Station als reine Monolith-Geschichte gelesen wird.",
+        imageFit: "cover",
+        imagePosition: "center top"
+      },
+      {
+        src: "https://i.ytimg.com/vi/_qvxZ32aOnE/hqdefault.jpg",
+        alt: "Vorschaubild zur ARTE-Doku über 1979",
+        title: "Die Revolution als Bild der Zuspitzung",
+        caption:
+          "Die ARTE-Doku bündelt die dramatische Übergangsphase von der Monarchie zur Islamischen Republik.",
+        whyItMatters:
+          "Arbeitsnutzen: Das Bild verbindet die Akteursebene mit der Systemgeschichte der Revolution."
+      }
+    ],
+    actorFocus: {
+      title: "Akteurskonstellation dieser Station",
+      intro:
+        "Diese Station braucht bewusst zwei Gesichter: Chomeini als Gründungsfigur der Islamischen Republik und Chatami als Symbol dafür, dass es innerhalb des Systems Reformansätze, Öffnungshoffnungen und zugleich enge Grenzen des Wandels gab."
+    },
+    actors: [
+      {
+        name: "Ruhollah Chomeini",
+        role: "Revolutionsführer und prägende Gründungsfigur der Islamischen Republik",
+        lens:
+          "An Chomeini lassen sich revolutionäre Mobilisierung, religiöse Legitimation und der institutionelle Aufbau der neuen Herrschaftsordnung erklären.",
+        whyHere:
+          "Für diese Station ist er zentral, weil sich an seiner Person der Bruch von Monarchie und Republik ebenso zeigt wie die theokratische Grundlogik des Systems.",
+        imageSrc:
+          "https://commons.wikimedia.org/wiki/Special:Redirect/file/Portrait_of_Ruhollah_Khomeini.jpg",
+        imageAlt: "Ruhollah Chomeini im Porträt",
+        imageFit: "cover",
+        imagePosition: "center top"
+      },
+      {
+        name: "Mohammad Chatami",
+        role: "Präsident und Symbolfigur der Reformhoffnungen innerhalb der Islamischen Republik",
+        lens:
+          "An Chatami werden Öffnung, Zivilgesellschaft, Dialogideen und zugleich die strukturellen Blockaden des Systems sichtbar.",
+        whyHere:
+          "Er ist wichtig, damit die Gegenwart nicht als reine Einheitsgeschichte gelesen wird, sondern als Spannungsfeld zwischen Reformdruck, gesellschaftlichen Erwartungen und systemischen Grenzen.",
+        imageSrc:
+          "https://commons.wikimedia.org/wiki/Special:Redirect/file/Mohammad_Khatami_-_December_11,_2007.jpg",
+        imageAlt: "Mohammad Chatami im Porträt",
+        imageFit: "cover",
+        imagePosition: "center top"
+      }
+    ],
     miniQuestions: [
       {
         id: "mq-republik-1",
@@ -1014,6 +1348,35 @@ const MODULES = [
         successThreshold: 2,
         modelAnswer:
           "Iran ist weder reine Demokratie noch nur klassischer Gottesstaat, weil es zwar Wahlen und republikanische Institutionen gibt, diese aber stark von religiösen Machtzentren wie dem Obersten Führer und dem Wächterrat begrenzt werden."
+      },
+      {
+        id: "mq-republik-3",
+        title: "Protest und Kontinuität",
+        type: "short-text",
+        challenge: "Zusatzcheck",
+        prompt:
+          "Warum kehren in Iran immer wieder Reformforderungen und Proteste zurück, obwohl das System so kontrollstark ist?",
+        help:
+          "Verbinde gesellschaftlichen Wandel mit den Grenzen des politischen Systems.",
+        placeholder: "Reformforderungen und Proteste kehren zurück, weil ...",
+        sourceIds: ["r-republik-bpb", "r-republik-zdf", "r-republik-arte-playlist"],
+        conceptGroups: [
+          {
+            label: "Gesellschaft verändert sich weiter",
+            variants: ["gesellschaft", "jugend", "bildung", "frauen", "verändert sich", "zivilgesellschaft"]
+          },
+          {
+            label: "politische Öffnung bleibt begrenzt",
+            variants: ["grenzen", "wächterrat", "oberster führer", "kontrolle", "system", "blockaden"]
+          },
+          {
+            label: "deshalb entsteht wiederkehrender Druck",
+            variants: ["proteste", "druck", "unzufriedenheit", "reformforderung", "wiederkehrend", "spannung"]
+          }
+        ],
+        successThreshold: 2,
+        modelAnswer:
+          "Reformforderungen und Proteste kehren zurück, weil sich Gesellschaft und Erwartungen weiter verändern, politische Öffnung aber immer wieder an den Grenzen des Systems scheitert. Gerade daraus entsteht dauerhafter Druck."
       }
     ],
     resources: [
@@ -1150,39 +1513,39 @@ const MODULES = [
         type: "drag-order",
         challenge: "Chronologie",
         prompt:
-          "Ordne zentrale Entwicklungsschritte der Islamischen Republik von 1979 bis zum neuen Atomkonflikt.",
+          "Ordne zentrale Entwicklungsschritte der Islamischen Republik von der Revolution bis zum neuen Atomkonflikt.",
         help:
-          "Beginne mit der Revolution und ende mit dem Wiederaufbrechen des Atomstreits nach 2018.",
+          "Beginne mit der Revolution und ende mit dem Wiederaufbrechen des Atomstreits nach dem Ende des Abkommens.",
         sourceIds: ["r-republik-arte", "r-republik-bpb", "r-republik-zdf"],
         items: [
           {
             id: "revolution-1979",
-            label: "1979 stürzt die Monarchie; Iran wird zur Islamischen Republik.",
+            label: "Die Monarchie stürzt; Iran wird zur Islamischen Republik.",
             detail: "Die politische Grundordnung verändert sich radikal."
           },
           {
             id: "hostage-1979",
-            label: "1979 besetzen Studenten die US-Botschaft in Teheran.",
+            label: "Studenten besetzen die US-Botschaft in Teheran.",
             detail: "Die Geiselkrise prägt das Verhältnis zu den USA nachhaltig."
           },
           {
             id: "war-1980",
-            label: "1980 beginnt der Iran-Irak-Krieg.",
+            label: "Der Iran-Irak-Krieg beginnt.",
             detail: "Der Krieg dauert acht Jahre und prägt Staat und Gesellschaft tief."
           },
           {
             id: "khomeini-1989",
-            label: "1989 stirbt Chomeini; Ali Chamenei wird Nachfolger als Oberster Führer.",
+            label: "Chomeini stirbt; Ali Chamenei wird Nachfolger als Oberster Führer.",
             detail: "Die Islamische Republik geht in eine neue Machtphase über."
           },
           {
             id: "jcpoa-2015",
-            label: "2015 wird das internationale Atomabkommen abgeschlossen.",
+            label: "Das internationale Atomabkommen wird abgeschlossen.",
             detail: "Iran akzeptiert Auflagen, im Gegenzug sollen Sanktionen gelockert werden."
           },
           {
             id: "usa-2018",
-            label: "2018 kündigen die USA das Atomabkommen einseitig auf.",
+            label: "Die USA kündigen das Atomabkommen einseitig auf.",
             detail: "Der Atomkonflikt und die Sanktionsspirale verschärfen sich erneut."
           }
         ],
@@ -1227,6 +1590,34 @@ const MODULES = [
       },
       {
         id: "q-republik-5",
+        type: "short-text",
+        challenge: "Reformperspektive",
+        prompt:
+          "Warum ist Mohammad Chatami wichtig, wenn man versteht, dass Wandel in der Islamischen Republik möglich, aber begrenzt ist?",
+        help:
+          "Verbinde Reformhoffnung, gesellschaftliche Öffnung und die Grenzen des Systems.",
+        placeholder: "Chatami ist wichtig, weil ...",
+        sourceIds: ["r-republik-bpb", "r-republik-zdf", "r-republik-arte-playlist"],
+        conceptGroups: [
+          {
+            label: "steht für Reformen oder Öffnung",
+            variants: ["reformen", "öffnung", "liberalisierung", "dialog", "reformpräsident", "zivilgesellschaft"]
+          },
+          {
+            label: "gesellschaftliche Hoffnungen wurden sichtbar",
+            variants: ["hoffnung", "gesellschaft", "jugend", "öffentlichkeit", "beteiligung", "erwartungen"]
+          },
+          {
+            label: "das System setzte Grenzen",
+            variants: ["grenzen", "wächterrat", "oberster führer", "blockaden", "system", "nicht vollständig veränderbar"]
+          }
+        ],
+        successThreshold: 2,
+        modelAnswer:
+          "Chatami ist wichtig, weil an ihm sichtbar wird, dass die Islamische Republik Reform- und Öffnungsphasen zulassen kann. Zugleich zeigen seine Grenzen, dass entscheidende Machtzentren des Systems tiefgreifenden Wandel blockieren können."
+      },
+      {
+        id: "q-republik-6",
         type: "open-analysis",
         challenge: "Transfer",
         prompt:
@@ -1254,6 +1645,34 @@ const MODULES = [
         ],
         modelAnswer:
           "Ich würde eine neue Iran-Meldung zuerst entlang von vier Achsen prüfen: Herrschaft, Gesellschaft, Religion und Geopolitik. So kann ich klären, ob es um Machtkämpfe im System, gesellschaftlichen Druck, ideologische Deutungen oder regionale Strategie geht. Erst wenn diese Ebenen zusammengedacht werden, lässt sich unterscheiden, was an einer Meldung wirklich neu ist und was auf ältere Entwicklungslinien zurückgeht."
+      },
+      {
+        id: "q-republik-7",
+        type: "short-text",
+        challenge: "Gegenwartsdeutung",
+        prompt:
+          "Warum wäre es falsch, aktuelle Iran-Meldungen nur religiös zu erklären?",
+        help:
+          "Verbinde Herrschaft, Gesellschaft, Sicherheitslogik und Geopolitik.",
+        placeholder: "Es wäre falsch, Iran nur religiös zu erklären, weil ...",
+        sourceIds: ["r-republik-zdf", "r-republik-terrax", "r-republik-bpb", "r-republik-arte-playlist"],
+        conceptGroups: [
+          {
+            label: "politische Machtstrukturen sind entscheidend",
+            variants: ["herrschaft", "machtstrukturen", "staat", "regime", "institutionen", "kontrolle"]
+          },
+          {
+            label: "gesellschaftliche Konflikte spielen mit hinein",
+            variants: ["gesellschaft", "proteste", "frauen", "jugend", "alltag", "soziale spannungen"]
+          },
+          {
+            label: "geopolitische Interessen prägen die Lage mit",
+            variants: ["geopolitik", "regionalmacht", "usa", "israel", "atom", "sanktionen", "hormus"]
+          }
+        ],
+        successThreshold: 2,
+        modelAnswer:
+          "Es wäre falsch, Iran nur religiös zu erklären, weil politische Machtstrukturen, gesellschaftliche Konflikte und geopolitische Interessen die Lage genauso prägen. Religion ist wichtig, aber nur eine von mehreren Analyseachsen."
       }
     ]
   }
