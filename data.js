@@ -1386,6 +1386,35 @@ const MODULES = [
         successThreshold: 2,
         modelAnswer:
           "Reformforderungen und Proteste kehren zurück, weil sich Gesellschaft und Erwartungen weiter verändern, politische Öffnung aber immer wieder an den Grenzen des Systems scheitert. Gerade daraus entsteht dauerhafter Druck."
+      },
+      {
+        id: "mq-republik-4",
+        title: "Die Schweiz als Kanal",
+        type: "short-text",
+        challenge: "Zusatzcheck",
+        prompt:
+          "Warum spielt die Schweiz seit dem Abbruch der Beziehungen zwischen den USA und Iran eine besondere diplomatische Rolle?",
+        help:
+          "Verbinde Schutzmachtmandat, Kommunikationskanal und konsularische Vermittlung.",
+        placeholder: "Die Schweiz spielt eine besondere Rolle, weil ...",
+        sourceIds: ["r-republik-schweiz", "r-republik-zdf", "r-republik-bpb"],
+        conceptGroups: [
+          {
+            label: "Schweiz vertritt US-Interessen im Iran",
+            variants: ["schutzmacht", "us-interessen", "interessensektion", "vertritt", "botschaft", "schweiz"]
+          },
+          {
+            label: "sie hält minimale Kommunikation offen",
+            variants: ["kommunikation", "kanal", "vermitteln", "gute dienste", "briefträgerfunktion", "kontakt"]
+          },
+          {
+            label: "sie hilft bei konsularischen oder humanitären Fragen",
+            variants: ["konsularisch", "gefangene", "humanitär", "austausch", "bürger", "konsularische dienste"]
+          }
+        ],
+        successThreshold: 2,
+        modelAnswer:
+          "Die Schweiz spielt eine besondere Rolle, weil sie als Schutzmacht die US-Interessen im Iran vertritt, Kommunikationskanäle zwischen beiden Staaten offenhält und bei konsularischen oder humanitären Fragen vermitteln kann."
       }
     ],
     resources: [
@@ -1458,6 +1487,20 @@ const MODULES = [
           "Diese Playlist macht die Station anschlussfähig für neue Entwicklungen, ohne die historischen Grundlinien zu verlieren.",
         didacticUse:
           "Für Tagesmeldungen oder Hausaufträge einen aktuellen Beitrag auswählen und mit dem Lage-Check-Raster auswerten."
+      },
+      {
+        id: "r-republik-schweiz",
+        bucket: "Zusatzquellen: Diplomatie und Vermittlung",
+        type: "Website",
+        title: "EDA: Schutzmachtmandate und Schweizer Interessensektion in Teheran",
+        focus:
+          "Offizielle Informationen zur Rolle der Schweiz als Schutzmacht der USA im Iran seit dem Bruch der diplomatischen Beziehungen nach der Revolution und Geiselkrise.",
+        link: "https://www.eda.admin.ch/eda/de/home/aussenpolitik/frieden-menschenrechte/frieden/die-guten-dienstederschweiz/schutzmachtmandate.html",
+        tags: ["EDA", "Schweiz", "Diplomatie"],
+        selectionNote:
+          "Die Quelle ist wichtig, weil sie die Schweizer Vermittlungsrolle nicht nur erwähnt, sondern institutionell erklärt.",
+        didacticUse:
+          "Einsetzen, wenn die Lernenden verstehen sollen, wie trotz abgebrochener Beziehungen minimale Diplomatie und konsularische Hilfe weiterlaufen können."
       }
     ],
     questions: [
@@ -1682,6 +1725,34 @@ const MODULES = [
         successThreshold: 2,
         modelAnswer:
           "Es wäre falsch, Iran nur religiös zu erklären, weil politische Machtstrukturen, gesellschaftliche Konflikte und geopolitische Interessen die Lage genauso prägen. Religion ist wichtig, aber nur eine von mehreren Analyseachsen."
+      },
+      {
+        id: "q-republik-8",
+        type: "short-text",
+        challenge: "Diplomatie",
+        prompt:
+          "Welche Rolle spielt die Schweiz zwischen den USA und Iran, und warum ist diese Rolle historisch seit der Revolution besonders bedeutsam?",
+        help:
+          "Verbinde den Abbruch direkter Beziehungen mit Schutzmachtmandat, Vermittlung und konkreten Funktionen.",
+        placeholder: "Die Schweiz spielt diese Rolle, weil ...",
+        sourceIds: ["r-republik-schweiz", "r-republik-zdf", "r-republik-arte-playlist"],
+        conceptGroups: [
+          {
+            label: "Schweiz ist Schutzmacht oder vertritt US-Interessen",
+            variants: ["schutzmacht", "vertritt us-interessen", "interessensektion", "teheran", "botschaft", "schweizer botschaft"]
+          },
+          {
+            label: "Beziehungen USA-Iran sind seit der Revolution und Geiselkrise abgebrochen",
+            variants: ["revolution", "geiselkrise", "abbruch der beziehungen", "keine diplomatischen beziehungen", "seit 1980", "nach 1979"]
+          },
+          {
+            label: "sie vermittelt Kommunikation oder humanitäre Fragen",
+            variants: ["kommunikation", "vermitteln", "gute dienste", "konsularisch", "gefangene", "humanitär", "kanal"]
+          }
+        ],
+        successThreshold: 2,
+        modelAnswer:
+          "Die Schweiz vertritt als Schutzmacht die US-Interessen im Iran, weil die direkten Beziehungen zwischen Washington und Teheran nach Revolution und Geiselkrise abgebrochen wurden. Gerade deshalb ist sie als Kommunikationskanal, für konsularische Aufgaben und bei humanitären Vermittlungen besonders wichtig."
       }
     ]
   }
