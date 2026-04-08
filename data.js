@@ -35,8 +35,9 @@ const MODULES = [
         "Aktuelle Karten oder Meldungen zur Straße von Hormus ergänzen und mit historischen Raumvorstellungen verbinden."
     },
     visual: {
-      src: "https://i.ytimg.com/vi/6FlPHpCEwL8/hqdefault.jpg",
-      alt: "Vorschaubild zum Überblicksvideo über Iran"
+      src:
+        "https://commons.wikimedia.org/wiki/Special:Redirect/file/The_Ruins_of_Persepolis,_Iran_(4679218714).jpg",
+      alt: "Ruinen von Persepolis als historischer Ort des alten Perserreichs"
     },
     miniQuestions: [
       {
@@ -392,8 +393,9 @@ const MODULES = [
         "Aktuelle Debatten über Souveränität oder Sanktionen mit 1953 in Beziehung setzen."
     },
     visual: {
-      src: "https://i.ytimg.com/vi/rIsOLuvXM7I/hqdefault.jpg",
-      alt: "Vorschaubild zum ZDF-Video Iran und USA"
+      src:
+        "https://commons.wikimedia.org/wiki/Special:Redirect/file/Portrait_of_Mohammad_Mosaddegh_-_circa_1952.jpg",
+      alt: "Porträt von Mohammad Mossadegh"
     },
     visualDossierTitle: "Bilder von Souveränität, Öl und Intervention",
     visualDossierIntro:
@@ -412,13 +414,14 @@ const MODULES = [
         imagePosition: "center top"
       },
       {
-        src: "https://i.ytimg.com/vi/rIsOLuvXM7I/hqdefault.jpg",
-        alt: "Vorschaubild zum Video über die Konfliktgeschichte zwischen Iran und den USA",
-        title: "Der Konflikt reicht weiter zurück",
+        src:
+          "https://commons.wikimedia.org/wiki/Special:Redirect/file/Abadan_Refinery_-_panoramio.jpg",
+        alt: "Abadan-Raffinerie als Symbol für die Ölpolitik Irans",
+        title: "Öl als Machtfrage",
         caption:
-          "Das Video führt den Blick weg von einer reinen Gegenwartswahrnehmung und zurück zur Vorgeschichte der Spannungen zwischen Iran und den USA.",
+          "Die Raffinerie in Abadan steht für die materielle Seite des Konflikts: Öl war nicht nur Wirtschaftsgut, sondern Herrschafts- und Souveränitätsfrage.",
         whyItMatters:
-          "Arbeitsnutzen: Das Bild markiert den Schritt von der Einzelperson zur langen Konfliktlinie."
+          "Arbeitsnutzen: Das Bild verschiebt den Blick von der Person auf die Ressource, um die sich innen- und außenpolitische Machtinteressen bündelten."
       }
     ],
     actorFocus: {
@@ -801,8 +804,9 @@ const MODULES = [
         "Vergleich zwischen Modernisierung von oben und politischer Beteiligung von unten diskutieren."
     },
     visual: {
-      src: "https://i.ytimg.com/vi/6FlPHpCEwL8/hqdefault.jpg",
-      alt: "Vorschaubild zum Überblicksvideo über Iran"
+      src:
+        "https://commons.wikimedia.org/wiki/Special:Redirect/file/Mohammad_Reza_Pahlavi_portrait_(1).jpg",
+      alt: "Porträt von Mohammad Reza Pahlavi"
     },
     visualDossierTitle: "Bilder von Monarchie, Reform und Entfremdung",
     visualDossierIntro:
@@ -821,13 +825,16 @@ const MODULES = [
         imagePosition: "center top"
       },
       {
-        src: "https://i.ytimg.com/vi/6FlPHpCEwL8/hqdefault.jpg",
-        alt: "Vorschaubild zum Überblicksvideo über Iran",
-        title: "Von Reform zur Revolution",
+        src:
+          "https://commons.wikimedia.org/wiki/Special:Redirect/file/HIM_Shah_of_Iran_Opens_Petrochemical_Industry_Abadan.jpg",
+        alt: "Mohammad Reza Pahlavi bei der Eröffnung einer petrochemischen Anlage in Abadan",
+        title: "Modernisierung als Staatsinszenierung",
         caption:
-          "Das Überblicksvideo verbindet die Pahlavi-Zeit mit der Revolution und macht die Brüche der Herrschaft besonders sichtbar.",
+          "Das Bild zeigt Mohammad Reza Pahlavi bei einer industriepolitischen Inszenierung und verdichtet so den Modernisierungsanspruch des Regimes.",
         whyItMatters:
-          "Arbeitsnutzen: Das Bild markiert den Übergang von Stabilisierung nach dem Putsch zur späteren Revolutionsdynamik."
+          "Arbeitsnutzen: Das Motiv hilft, wirtschaftliche Entwicklung, Selbstdarstellung der Monarchie und Herrschaft von oben zusammenzulesen.",
+        imageFit: "cover",
+        imagePosition: "center top"
       }
     ],
     actorFocus: {
@@ -1216,8 +1223,9 @@ const MODULES = [
         "Eine neue Tagesmeldung auswählen und prüfen: Was ist neu, was ist Kontinuität, welche historischen Linien werden aktiviert?"
     },
     visual: {
-      src: "https://i.ytimg.com/vi/_qvxZ32aOnE/hqdefault.jpg",
-      alt: "Vorschaubild zur ARTE-Doku über 1979 und den Aufstieg des Islamismus"
+      src:
+        "https://commons.wikimedia.org/wiki/Special:Redirect/file/Portrait_of_Ruhollah_Khomeini.jpg",
+      alt: "Porträt von Ruhollah Chomeini"
     },
     visualDossierTitle: "Bilder von Revolution, System und begrenzter Öffnung",
     visualDossierIntro:
@@ -1248,13 +1256,14 @@ const MODULES = [
         imagePosition: "center top"
       },
       {
-        src: "https://i.ytimg.com/vi/_qvxZ32aOnE/hqdefault.jpg",
-        alt: "Vorschaubild zur ARTE-Doku über 1979",
-        title: "Die Revolution als Bild der Zuspitzung",
+        src:
+          "https://commons.wikimedia.org/wiki/Special:Redirect/file/Former_US_embassy_in_Tehran_(1484119048).jpg",
+        alt: "Ehemalige US-Botschaft in Teheran",
+        title: "Die Botschaft als geopolitischer Erinnerungsort",
         caption:
-          "Die ARTE-Doku bündelt die dramatische Übergangsphase von der Monarchie zur Islamischen Republik.",
+          "Die ehemalige US-Botschaft in Teheran steht bis heute für Geiselkrise, Feindbildpolitik und den Bruch der Beziehungen zu den USA.",
         whyItMatters:
-          "Arbeitsnutzen: Das Bild verbindet die Akteursebene mit der Systemgeschichte der Revolution."
+          "Arbeitsnutzen: Das Motiv verbindet Revolutionsgeschichte direkt mit Außenpolitik, Symbolpolitik und Gegenwartsdeutung."
       }
     ],
     actorFocus: {
