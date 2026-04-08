@@ -502,6 +502,26 @@ a {
   background: rgba(241, 236, 228, 0.95);
 }
 
+.module-visual-caption {
+  display: grid;
+  gap: 6px;
+  padding: 14px 16px 16px;
+  border-top: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.88);
+}
+
+.module-visual-caption strong {
+  font-size: 1rem;
+  line-height: 1.35;
+  color: var(--ink-strong);
+}
+
+.module-visual-caption span {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--ink-soft);
+}
+
 .module-box {
   padding: 18px;
   border-radius: var(--radius-lg);

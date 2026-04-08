@@ -713,6 +713,16 @@ function renderModuleHeader(module) {
               ${getImageErrorAttributes("module")}
               ${getImageStyleAttribute(visual)}
             />
+            ${
+              visual.title || visual.caption
+                ? `
+                  <figcaption class="module-visual-caption">
+                    ${visual.title ? `<strong>${escapeHtml(visual.title)}</strong>` : ""}
+                    ${visual.caption ? `<span>${escapeHtml(visual.caption)}</span>` : ""}
+                  </figcaption>
+                `
+                : ""
+            }
           </figure>
         `
         : ""
