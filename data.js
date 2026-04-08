@@ -394,32 +394,30 @@ const MODULES = [
     },
     visual: {
       src:
-        "https://commons.wikimedia.org/wiki/Special:Redirect/file/Portrait_of_Mohammad_Mosaddegh_-_circa_1952.jpg",
-      alt: "Porträt von Mohammad Mossadegh"
+        "https://commons.wikimedia.org/wiki/Special:Redirect/file/Reza_Shah_Pahlavi_portrait_(1938).jpg",
+      alt: "Porträt von Reza Schah Pahlavi aus der Zeit vor Mossadegh"
     },
     visualDossierTitle: "Bilder von Souveränität, Öl und Intervention",
     visualDossierIntro:
-      "Diese Bildsektion hält die Station bewusst an zwei Polen fest: Mossadegh als Symbolfigur nationaler Selbstbestimmung und der Konflikt mit westlicher Einflussnahme als länger wirkende politische Erinnerung.",
+      "Diese Bildsektion zeigt die Station nicht nur über eine Person, sondern über Vorgeschichte, Rohstoffpolitik und internationale Verflechtung.",
     visualDossier: [
       {
         src:
-          "https://commons.wikimedia.org/wiki/Special:Redirect/file/Portrait_of_Mohammad_Mosaddegh_-_circa_1952.jpg",
-        alt: "Mohammad Mossadegh im Porträt",
-        title: "Mossadegh als Erinnerungsfigur",
+          "https://commons.wikimedia.org/wiki/Special:Redirect/file/MossadeghHenderson.jpg",
+        alt: "Mohammad Mossadegh mit dem US-Botschafter Loy Henderson",
+        title: "Mossadegh in der internationalen Arena",
         caption:
-          "Porträt Mohammad Mossadeghs als Bezugspunkt für Verstaatlichung, Parlamentarismus und nationale Souveränität.",
+          "Die Aufnahme mit US-Botschafter Loy Henderson macht sichtbar, dass die Krise um Mossadegh nie nur innenpolitisch war.",
         whyItMatters:
-          "Arbeitsnutzen: Das Bild hilft, die Station nicht nur als Ölkonflikt, sondern auch als Demokratie- und Symbolgeschichte zu lesen.",
-        imageFit: "cover",
-        imagePosition: "center top"
+          "Arbeitsnutzen: Das Bild hilft, Souveränität, Diplomatie und außenpolitischen Druck gemeinsam zu lesen."
       },
       {
         src:
-          "https://commons.wikimedia.org/wiki/Special:Redirect/file/Abadan_Refinery_-_panoramio.jpg",
-        alt: "Abadan-Raffinerie als Symbol für die Ölpolitik Irans",
+          "https://commons.wikimedia.org/wiki/Special:Redirect/file/Abadanrefinery1938.jpg",
+        alt: "Historische Aufnahme der Raffinerie von Abadan",
         title: "Öl als Machtfrage",
         caption:
-          "Die Raffinerie in Abadan steht für die materielle Seite des Konflikts: Öl war nicht nur Wirtschaftsgut, sondern Herrschafts- und Souveränitätsfrage.",
+          "Die historische Raffinerie in Abadan steht für die materielle Seite des Konflikts: Öl war nicht nur Wirtschaftsgut, sondern Herrschafts- und Souveränitätsfrage.",
         whyItMatters:
           "Arbeitsnutzen: Das Bild verschiebt den Blick von der Person auf die Ressource, um die sich innen- und außenpolitische Machtinteressen bündelten."
       }
@@ -805,8 +803,8 @@ const MODULES = [
     },
     visual: {
       src:
-        "https://commons.wikimedia.org/wiki/Special:Redirect/file/Mohammad_Reza_Pahlavi_portrait_(1).jpg",
-      alt: "Porträt von Mohammad Reza Pahlavi"
+        "https://commons.wikimedia.org/wiki/Special:Redirect/file/Mohammad_Pahlavi_Coronation.jpg",
+      alt: "Krönungsbild von Mohammad Reza Pahlavi"
     },
     visualDossierTitle: "Bilder von Monarchie, Reform und Entfremdung",
     visualDossierIntro:
@@ -814,15 +812,13 @@ const MODULES = [
     visualDossier: [
       {
         src:
-          "https://commons.wikimedia.org/wiki/Special:Redirect/file/Mohammad_Reza_Pahlavi_portrait_(1).jpg",
-        alt: "Mohammad Reza Pahlavi im Porträt",
-        title: "Der Schah als Herrschaftsbild",
+          "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tentcitypersepolis.jpg",
+        alt: "Zeltstadt der Persepolis-Feierlichkeiten",
+        title: "Persepolis als Bühne der Monarchie",
         caption:
-          "Porträt Mohammad Reza Pahlavis als Symbol für Modernisierung von oben, Monarchie und starke Westbindung.",
+          "Die luxuriöse Zeltstadt der Persepolis-Feiern zeigt die monarchische Selbstinszenierung des Regimes in besonders verdichteter Form.",
         whyItMatters:
-          "Arbeitsnutzen: Das Bild hilft, Reformpolitik und autoritäre Herrschaft an einer Person zusammenzudenken.",
-        imageFit: "cover",
-        imagePosition: "center top"
+          "Arbeitsnutzen: Das Motiv macht die Distanz zwischen Glanzpolitik und gesellschaftlicher Wahrnehmung der Herrschaft sichtbar."
       },
       {
         src:
@@ -1224,34 +1220,22 @@ const MODULES = [
     },
     visual: {
       src:
-        "https://commons.wikimedia.org/wiki/Special:Redirect/file/Portrait_of_Ruhollah_Khomeini.jpg",
-      alt: "Porträt von Ruhollah Chomeini"
+        "https://commons.wikimedia.org/wiki/Special:Redirect/file/1979_Iranian_Revolution.jpg",
+      alt: "Massendemonstration während der iranischen Revolution 1979"
     },
     visualDossierTitle: "Bilder von Revolution, System und begrenzter Öffnung",
     visualDossierIntro:
-      "Die Bildsektion dieser Station soll keine Einheitsgeschichte erzählen. Chomeini steht für Gründung und ideologische Verdichtung, Chatami für Reformhoffnungen und die spürbaren Grenzen des Systems.",
+      "Die Bildsektion dieser Station soll keine Einheitsgeschichte erzählen. Sie zeigt Gründungsphase, langfristige Machtzentren, außenpolitische Zuspitzung und spätere Reformhoffnungen als unterschiedliche Ebenen derselben Systemgeschichte.",
     visualDossier: [
       {
         src:
           "https://commons.wikimedia.org/wiki/Special:Redirect/file/Portrait_of_Ruhollah_Khomeini.jpg",
-        alt: "Ruhollah Chomeini im Porträt",
+        alt: "Ruhollah Chomeini im offiziellen Porträt",
         title: "Chomeini als Gründungsfigur",
         caption:
-          "Porträt Ruhollah Chomeinis als Symbol für Revolution, religiöse Legitimation und den Aufbau der Islamischen Republik.",
+          "Das offizielle Porträt Chomeinis steht für die revolutionäre Neubegründung der Herrschaft und die religiöse Aufladung des politischen Systems.",
         whyItMatters:
-          "Arbeitsnutzen: Das Bild markiert den Systembruch und gehört direkt zur Frage nach Herrschaft und Ideologie.",
-        imageFit: "cover",
-        imagePosition: "center top"
-      },
-      {
-        src:
-          "https://commons.wikimedia.org/wiki/Special:Redirect/file/Mohammad_Khatami_-_December_11,_2007.jpg",
-        alt: "Mohammad Chatami im Porträt",
-        title: "Chatami als Reformsymbol",
-        caption:
-          "Porträt Mohammad Chatamis als Bezugspunkt für Öffnungshoffnungen, Zivilgesellschaft und blockierte Reformen innerhalb des Systems.",
-        whyItMatters:
-          "Arbeitsnutzen: Das Bild verhindert, dass die Station als reine Monolith-Geschichte gelesen wird.",
+          "Arbeitsnutzen: Das Bild markiert die Anfangsphase der Islamischen Republik und die symbolische Autorität ihres Gründers.",
         imageFit: "cover",
         imagePosition: "center top"
       },
@@ -1264,12 +1248,46 @@ const MODULES = [
           "Die ehemalige US-Botschaft in Teheran steht bis heute für Geiselkrise, Feindbildpolitik und den Bruch der Beziehungen zu den USA.",
         whyItMatters:
           "Arbeitsnutzen: Das Motiv verbindet Revolutionsgeschichte direkt mit Außenpolitik, Symbolpolitik und Gegenwartsdeutung."
+      },
+      {
+        src:
+          "https://commons.wikimedia.org/wiki/Special:Redirect/file/Portrait_of_Ali_Khamenei_(2004).jpg",
+        alt: "Ali Chamenei im Porträt",
+        title: "Chamenei als dauerhaftes Machtzentrum",
+        caption:
+          "Das Porträt Ali Chameneis steht für die lange Kontinuität des Obersten Führers als entscheidendes Machtzentrum seit Chomeinis Nachfolge.",
+        whyItMatters:
+          "Arbeitsnutzen: Das Bild hilft, zwischen Präsidentenpolitik und der tiefer liegenden Macht des Obersten Führers zu unterscheiden.",
+        imageFit: "cover",
+        imagePosition: "center top"
+      },
+      {
+        src:
+          "https://commons.wikimedia.org/wiki/Special:Redirect/file/Khomeini_returning.jpg",
+        alt: "Menschenmengen in Teheran bei der Rückkehr Chomeinis",
+        title: "Die Rückkehr Chomeinis als Wendepunkt",
+        caption:
+          "Die Menschenmengen bei Chomeinis Rückkehr zeigen, wie stark symbolische Führung und revolutionäre Mobilisierung ineinandergriffen.",
+        whyItMatters:
+          "Arbeitsnutzen: Das Motiv ergänzt das Revolutionsbild um einen konkreten Wendepunkt zwischen Straßenbewegung und neuer Führungsordnung."
+      },
+      {
+        src:
+          "https://commons.wikimedia.org/wiki/Special:Redirect/file/Mohammad_Khatami_-_Feb_16,_2004.jpg",
+        alt: "Mohammad Chatami bei einer Zeremonie im Präsidialamt",
+        title: "Chatami und die Phase der Reformhoffnung",
+        caption:
+          "Die Aufnahme Chatamis aus dem Präsidialamt zeigt ihn in seiner politischen Funktion und eignet sich besser, um Reformpolitik innerhalb des Systems sichtbar zu machen.",
+        whyItMatters:
+          "Arbeitsnutzen: Das Bild verbindet Person, Amt und Reformperspektive, ohne wie ein unsauber beschnittenes Nahporträt zu wirken.",
+        imageFit: "cover",
+        imagePosition: "center top"
       }
     ],
     actorFocus: {
       title: "Akteurskonstellation dieser Station",
       intro:
-        "Diese Station braucht bewusst zwei Gesichter: Chomeini als Gründungsfigur der Islamischen Republik und Chatami als Symbol dafür, dass es innerhalb des Systems Reformansätze, Öffnungshoffnungen und zugleich enge Grenzen des Wandels gab."
+        "Diese Station braucht bewusst drei Gesichter: Chomeini als Gründungsfigur, Chamenei als dauerhaftes Machtzentrum und Chatami als Symbol dafür, dass es innerhalb des Systems Reformansätze, Öffnungshoffnungen und zugleich enge Grenzen des Wandels gab."
     },
     actors: [
       {
@@ -1286,6 +1304,19 @@ const MODULES = [
         imagePosition: "center top"
       },
       {
+        name: "Ali Chamenei",
+        role: "Oberster Führer seit dem Tod Chomeinis",
+        lens:
+          "An Chamenei wird sichtbar, wie stark die Islamische Republik von dauerhaften Machtzentren, Sicherheitslogik und religiös legitimierter Oberaufsicht geprägt ist.",
+        whyHere:
+          "Er ist wichtig, weil sich an ihm erklären lässt, warum Präsidenten wechseln können, die grundlegende Machtarchitektur des Systems aber stabil bleibt.",
+        imageSrc:
+          "https://commons.wikimedia.org/wiki/Special:Redirect/file/Portrait_of_Ali_Khamenei_(2004).jpg",
+        imageAlt: "Ali Chamenei im Porträt",
+        imageFit: "cover",
+        imagePosition: "center top"
+      },
+      {
         name: "Mohammad Chatami",
         role: "Präsident und Symbolfigur der Reformhoffnungen innerhalb der Islamischen Republik",
         lens:
@@ -1293,8 +1324,8 @@ const MODULES = [
         whyHere:
           "Er ist wichtig, damit die Gegenwart nicht als reine Einheitsgeschichte gelesen wird, sondern als Spannungsfeld zwischen Reformdruck, gesellschaftlichen Erwartungen und systemischen Grenzen.",
         imageSrc:
-          "https://commons.wikimedia.org/wiki/Special:Redirect/file/Mohammad_Khatami_-_December_11,_2007.jpg",
-        imageAlt: "Mohammad Chatami im Porträt",
+          "https://commons.wikimedia.org/wiki/Special:Redirect/file/Mohammad_Khatami_-_Feb_16,_2004.jpg",
+        imageAlt: "Mohammad Chatami bei einer Zeremonie im Präsidialamt",
         imageFit: "cover",
         imagePosition: "center top"
       }
