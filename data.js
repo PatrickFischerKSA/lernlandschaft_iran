@@ -5,7 +5,7 @@ const MODULES = [
     title: "Perserreich, Monarchie und geopolitische Lage",
     era: "Antike bis 1941",
     intro:
-      "Diese Auftaktstation zeigt Iran nicht nur als aktuellen Krisenraum, sondern als historischen Kultur- und Machtbereich zwischen Mesopotamien, Zentralasien, Kaukasus und Indischem Ozean. Sie führt vom Perserreich über Islamisierung und schiitische Prägung bis zu Reza Schah.",
+      "Diese Auftaktstation zeigt Iran nicht nur als aktuellen Krisenraum, sondern als historischen Kultur- und Machtbereich zwischen Mesopotamien, Zentralasien, Kaukasus und Indischem Ozean. Sie führt vom Perserreich über Islamisierung, schiitische Prägung und ethnische Vielfalt bis zu Reza Schah.",
     goal:
       "Du kannst erklären, warum Iran historisch, kulturell und geopolitisch weit mehr ist als nur ein aktueller Konfliktherd.",
     route:
@@ -22,12 +22,14 @@ const MODULES = [
       assessmentFocus: [
         "Iran nicht mit der arabischen Welt gleichsetzen",
         "historische Tiefe und aktuelle Bedeutung verbinden",
-        "Raumlage, Religion und politische Ordnung auseinanderhalten"
+        "Raumlage, Religion und politische Ordnung auseinanderhalten",
+        "Iran als Vielvölkerstaat statt als ethnisch homogenen Nationalstaat erkennen"
       ],
       misconceptions: [
         "Iran sei historisch erst seit 1979 relevant",
         "Iran sei einfach ein arabischer Staat",
-        "Geopolitik erkläre Iran vollständig ohne Kulturgeschichte"
+        "Geopolitik erkläre Iran vollständig ohne Kulturgeschichte",
+        "Iraner und Perser seien dasselbe"
       ],
       product:
         "Begriffsnetz zu Kultur, Raumlage und Machtgeschichte oder ein begründeter Kurztext zur Bedeutung Irans.",
@@ -129,6 +131,35 @@ const MODULES = [
         successThreshold: 2,
         modelAnswer:
           "Die schiitische Prägung ist politisch wichtig, weil sie Irans historische und staatliche Identität mitformt, das Land von vielen Nachbarn unterscheidet und bis heute in regionale Macht- und Konfliktlagen hineinwirkt."
+      },
+      {
+        id: "mq-perserreich-4",
+        title: "Iran als Vielvölkerstaat",
+        type: "short-text",
+        challenge: "Zusatzcheck",
+        prompt:
+          "Warum ist es historisch falsch, Iran einfach mit den Persern gleichzusetzen?",
+        help:
+          "Verbinde Mehrsprachigkeit, mehrere ethnische Gruppen und den Begriff Vielvölkerstaat.",
+        placeholder: "Es ist falsch, Iran einfach mit den Persern gleichzusetzen, weil ...",
+        sourceIds: ["r-perserreich-vielvoelkerstaat", "r-perserreich-terrax"],
+        conceptGroups: [
+          {
+            label: "Iran ist ethnisch vielfältig",
+            variants: ["vielvölkerstaat", "mehrere ethnien", "ethnische vielfalt", "nicht homogen", "vielfältig"]
+          },
+          {
+            label: "nicht alle Iraner sind Perser",
+            variants: ["nicht alle iraner sind perser", "aseris", "kurden", "balutschen", "araber", "turkmenen", "loren"]
+          },
+          {
+            label: "es gibt mehrere Sprachen und Identitäten",
+            variants: ["mehrsprachig", "verschiedene sprachen", "kurdisch", "aserbaidschanisch", "balutschi", "persisch ist nicht die einzige sprache"]
+          }
+        ],
+        successThreshold: 2,
+        modelAnswer:
+          "Es ist falsch, Iran einfach mit den Persern gleichzusetzen, weil Iran ein Vielvölkerstaat mit mehreren ethnischen Gruppen und Sprachen ist. Nicht alle Iranerinnen und Iraner sind Perser oder persischsprachig."
       }
     ],
     resources: [
@@ -173,6 +204,20 @@ const MODULES = [
           "Die Quelle beginnt erst 1941, ist aber wichtig als Brücke von der älteren Geschichte in die Moderne.",
         didacticUse:
           "Vor allem für den Übergang zur nächsten Station geeignet."
+      },
+      {
+        id: "r-perserreich-vielvoelkerstaat",
+        bucket: "Zusatzquellen: Gesellschaft und Vielfalt",
+        type: "Website",
+        title: "bpb: Vielvölkerstaat Iran – Persien ist nicht Iran",
+        focus:
+          "Überblick zur ethnischen, sprachlichen und kulturellen Vielfalt Irans mit Kurden, Aserbaidschanern, Balutschen, Arabern, Turkmenen und anderen Gruppen.",
+        link: "https://www.bpb.de/themen/naher-mittlerer-osten/iran/303146/vielvoelkerstaat-iran-das-misstrauen-der-regierung/",
+        tags: ["bpb", "Gesellschaft", "Vielfalt"],
+        selectionNote:
+          "Die Quelle ist wichtig, weil sie die verbreitete Gleichsetzung von Iran und Persien ausdrücklich korrigiert.",
+        didacticUse:
+          "Nutzen, wenn kulturelle Tiefe nicht nur historisch, sondern auch gesellschaftlich differenziert verstanden werden soll."
       }
     ],
     questions: [
@@ -335,11 +380,11 @@ const MODULES = [
         type: "short-text",
         challenge: "Vertiefung",
         prompt:
-          "Warum führen vorschnelle Gleichsetzungen wie 'Iran ist einfach Nahost' oder 'Iran ist einfach islamisch' oft zu Fehlurteilen?",
+          "Warum führen vorschnelle Gleichsetzungen wie 'Iran ist einfach Nahost', 'Iran ist einfach islamisch' oder 'Iran ist einfach persisch' oft zu Fehlurteilen?",
         help:
-          "Verbinde Raumlage, Kulturgeschichte und religiöse Eigenprägung.",
+          "Verbinde Raumlage, Kulturgeschichte, religiöse Eigenprägung und gesellschaftliche Vielfalt.",
         placeholder: "Die Gleichsetzungen führen zu Fehlurteilen, weil ...",
-        sourceIds: ["r-perserreich-terrax", "r-perserreich-arte-playlist", "r-perserreich-bpb"],
+        sourceIds: ["r-perserreich-terrax", "r-perserreich-arte-playlist", "r-perserreich-bpb", "r-perserreich-vielvoelkerstaat"],
         conceptGroups: [
           {
             label: "Iran hat eine eigenständige persische Geschichte",
@@ -352,11 +397,43 @@ const MODULES = [
           {
             label: "Religion erklärt Iran nicht allein",
             variants: ["nicht nur religion", "schia", "politik", "geopolitik", "staat", "mehrdimensional"]
+          },
+          {
+            label: "Iran ist ethnisch und sprachlich vielfältig",
+            variants: ["vielvölkerstaat", "mehrere ethnien", "aseris", "kurden", "balutschen", "mehrsprachig", "nicht nur perser"]
           }
         ],
         successThreshold: 2,
         modelAnswer:
-          "Die Gleichsetzungen führen zu Fehlurteilen, weil Iran eine eigenständige persische Geschichte und Kultur hat, zwischen mehreren Großräumen liegt und politisch nicht allein über Religion erklärt werden kann."
+          "Die Gleichsetzungen führen zu Fehlurteilen, weil Iran eine eigenständige persische Geschichte und Kultur hat, zwischen mehreren Großräumen liegt, politisch nicht allein über Religion erklärt werden kann und zugleich ein Vielvölkerstaat mit mehreren Sprachen und Identitäten ist."
+      },
+      {
+        id: "q-perserreich-7",
+        type: "short-text",
+        challenge: "Gesellschaft",
+        prompt:
+          "Warum ist die Tatsache wichtig, dass Iran ein Vielvölkerstaat ist, wenn man spätere Konflikte und Proteste verstehen will?",
+        help:
+          "Verbinde ethnische Vielfalt mit Sprache, Zentrum-Peripherie-Verhältnis und politischen Konflikten.",
+        placeholder: "Die Vielfalt ist wichtig, weil ...",
+        sourceIds: ["r-perserreich-vielvoelkerstaat", "r-perserreich-bpb"],
+        conceptGroups: [
+          {
+            label: "verschiedene Gruppen erleben den Staat unterschiedlich",
+            variants: ["unterschiedlich", "zentrum und peripherie", "minderheiten", "ungleich", "diskriminierung", "verschiedene erfahrungen"]
+          },
+          {
+            label: "Sprache und Identität spielen politisch eine Rolle",
+            variants: ["sprache", "identität", "muttersprache", "kulturelle rechte", "ethnische identität", "kurdisch"]
+          },
+          {
+            label: "spätere Proteste lassen sich so besser einordnen",
+            variants: ["proteste", "später", "gegenwart", "konflikte", "kurdistan", "balutschistan", "einordnen"]
+          }
+        ],
+        successThreshold: 2,
+        modelAnswer:
+          "Die Vielfalt ist wichtig, weil verschiedene Bevölkerungsgruppen den Staat unterschiedlich erleben, Fragen von Sprache und kulturellen Rechten politisch relevant sind und sich spätere Proteste deshalb nicht nur als allgemeine Regimekritik, sondern auch als Konflikte um Zentrum, Peripherie und Anerkennung verstehen lassen."
       }
     ]
   },
@@ -1198,9 +1275,9 @@ const MODULES = [
     title: "Chomeini, Islamische Republik und Gegenwart",
     era: "1979 bis heute",
     intro:
-      "Diese Station führt von der Revolution 1979 über Geiselnahme, Iran-Irak-Krieg, die neue Verfassung und Chomeinis Herrschaft bis zu Atomkonflikt, Sanktionen, Regionalpolitik und aktuellen Spannungen. Sie ist zugleich als Update-Station gebaut, an die neue Meldungen angeschlossen werden können.",
+      "Diese Station führt von der Revolution 1979 über Geiselnahme, Iran-Irak-Krieg, die neue Verfassung und Chomeinis Herrschaft bis zu Atomkonflikt, Sanktionen, Regionalpolitik, den Protesten nach dem Tod von Jina Mahsa Amini und aktuellen Spannungen. Sie ist zugleich als Update-Station gebaut, an die neue Meldungen angeschlossen werden können.",
     goal:
-      "Du kannst die Grundlogik der Islamischen Republik erklären und neue Iran-Meldungen nach Herrschaft, Gesellschaft, Religion und Geopolitik einordnen.",
+      "Du kannst die Grundlogik der Islamischen Republik erklären und neue Iran-Meldungen nach Herrschaft, Gesellschaft, Religion, Vielfalt und Geopolitik einordnen.",
     route:
       "Beginne mit der ARTE-Doku zum Aufstieg des Islamismus, arbeite dann mit dem ZDF-Video zur langen Konfliktgeschichte mit den USA und sichere Schlüsselereignisse über den bpb-Text. Nutze zum Schluss die ARTE-Playlist als Update-Fenster für aktuelle Entwicklungen.",
     teacherNote:
@@ -1215,12 +1292,14 @@ const MODULES = [
       assessmentFocus: [
         "republikanische und theokratische Elemente gleichzeitig benennen",
         "Revolution, Krieg, Atomfrage und Regionalpolitik nicht vermischen",
-        "aktuelle Meldungen systematisch statt nur emotional einordnen"
+        "aktuelle Meldungen systematisch statt nur emotional einordnen",
+        "Jina Mahsa Amini nicht nur als Einzelfall, sondern als Auslöser einer breiteren Protestbewegung deuten"
       ],
       misconceptions: [
         "Iran sei seit 1979 nur eine lineare Gottesstaat-Geschichte",
         "alle Konflikte ließen sich nur religiös erklären",
-        "aktuelle Iran-Meldungen könnten ohne historische Tiefenlinien verstanden werden"
+        "aktuelle Iran-Meldungen könnten ohne historische Tiefenlinien verstanden werden",
+        "die Proteste seit 2022 hätten nur mit dem Kopftuch zu tun gehabt"
       ],
       product:
         "Lage-Check-Raster, in dem eine neue Meldung entlang der Achsen Herrschaft, Gesellschaft, Religion und Geopolitik eingeordnet wird.",
@@ -1237,7 +1316,7 @@ const MODULES = [
     },
     visualDossierTitle: "Bilder von Revolution, System und begrenzter Öffnung",
     visualDossierIntro:
-      "Die Bildsektion dieser Station soll keine Einheitsgeschichte erzählen. Sie zeigt Gründungsphase, langfristige Machtzentren, außenpolitische Zuspitzung und spätere Reformhoffnungen als unterschiedliche Ebenen derselben Systemgeschichte.",
+      "Die Bildsektion dieser Station soll keine Einheitsgeschichte erzählen. Sie zeigt Gründungsphase, langfristige Machtzentren, außenpolitische Zuspitzung, Protestdynamiken und spätere Reformhoffnungen als unterschiedliche Ebenen derselben Systemgeschichte.",
     visualDossier: [
       {
         src:
@@ -1285,13 +1364,25 @@ const MODULES = [
       },
       {
         src:
-          "https://commons.wikimedia.org/wiki/Special:Redirect/file/Mohammad_Khatami_-_Feb_16,_2004.jpg",
-        alt: "Mohammad Chatami bei einer Zeremonie im Präsidialamt",
+          "https://commons.wikimedia.org/wiki/Special:Redirect/file/World_Economic_Forum_Annual_Meeting_Davos_2007.jpg",
+        alt: "Mohammad Chatami beim Weltwirtschaftsforum in Davos",
         title: "Mohammad Chatami: Präsident und Symbolfigur der Reformhoffnungen",
         caption:
-          "Die Aufnahme zeigt Mohammad Chatami in seiner Funktion als Präsident und steht für Reformpolitik, gesellschaftliche Öffnung und zugleich die Grenzen des Systems.",
+          "Die Aufnahme zeigt Mohammad Chatami in seiner Funktion als früheren Präsidenten und Reformer und steht für gesellschaftliche Öffnung, Dialog und zugleich die Grenzen des Systems.",
         whyItMatters:
-          "Arbeitsnutzen: Das Bild verbindet Person, Amt und Reformperspektive, ohne wie ein unsauber beschnittenes Nahporträt zu wirken.",
+          "Arbeitsnutzen: Das Bild verbindet Person, Amt und Reformperspektive in einer klareren, weniger unglücklich beschnittenen Darstellung.",
+        imageFit: "contain",
+        imagePosition: "center top"
+      },
+      {
+        src:
+          "https://commons.wikimedia.org/wiki/Special:Redirect/file/Woman_Life_Freedom_-_52570240500.jpg",
+        alt: "Protestbild zur Bewegung Frau, Leben, Freiheit",
+        title: "Jina Mahsa Amini und die Bewegung Frau, Leben, Freiheit",
+        caption:
+          "Das Protestbild erinnert an Jina Mahsa Amini, die kurdische Iranerin, deren Tod im Polizeigewahrsam im September 2022 eine landesweite Protestbewegung auslöste.",
+        whyItMatters:
+          "Arbeitsnutzen: Das Bild verbindet Geschlechterpolitik, Staatsgewalt und die ethnische Dimension der Proteste, weil Amini aus der Provinz Kurdistan stammte.",
         imageFit: "cover",
         imagePosition: "center top"
       }
@@ -1312,6 +1403,8 @@ const MODULES = [
         imageSrc:
           "https://commons.wikimedia.org/wiki/Special:Redirect/file/Portrait_of_Ruhollah_Khomeini.jpg",
         imageAlt: "Ruhollah Chomeini im Porträt",
+        imageCaptionTitle: "Ruhollah Chomeini",
+        imageCaptionText: "Revolutionsführer und Gründungsfigur der Islamischen Republik",
         imageFit: "cover",
         imagePosition: "center top"
       },
@@ -1325,6 +1418,8 @@ const MODULES = [
         imageSrc:
           "https://commons.wikimedia.org/wiki/Special:Redirect/file/Portrait_of_Ali_Khamenei_(2004).jpg",
         imageAlt: "Ali Chamenei im Porträt",
+        imageCaptionTitle: "Ali Chamenei",
+        imageCaptionText: "Oberster Führer und zentrales Machtzentrum seit 1989",
         imageFit: "cover",
         imagePosition: "center top"
       },
@@ -1336,8 +1431,25 @@ const MODULES = [
         whyHere:
           "Er ist wichtig, damit die Gegenwart nicht als reine Einheitsgeschichte gelesen wird, sondern als Spannungsfeld zwischen Reformdruck, gesellschaftlichen Erwartungen und systemischen Grenzen.",
         imageSrc:
-          "https://commons.wikimedia.org/wiki/Special:Redirect/file/Mohammad_Khatami_-_Feb_16,_2004.jpg",
-        imageAlt: "Mohammad Chatami bei einer Zeremonie im Präsidialamt",
+          "https://commons.wikimedia.org/wiki/Special:Redirect/file/World_Economic_Forum_Annual_Meeting_Davos_2007.jpg",
+        imageAlt: "Mohammad Chatami beim Weltwirtschaftsforum in Davos",
+        imageCaptionTitle: "Mohammad Chatami",
+        imageCaptionText: "Präsident und Symbolfigur der Reformhoffnungen",
+        imageFit: "contain",
+        imagePosition: "center top"
+      },
+      {
+        name: "Jina Mahsa Amini",
+        role: "kurdische Iranerin, deren Tod 2022 die Bewegung Frau, Leben, Freiheit auslöste",
+        lens:
+          "An Jina Mahsa Amini werden Geschlechterpolitik, Staatsgewalt, die Rolle der Sittenpolizei und die Bedeutung ethnischer Marginalisierung zugleich sichtbar.",
+        whyHere:
+          "Sie ist wichtig, weil ihr Tod die Proteste nicht nur gegen Kleiderregeln, sondern gegen die politische Ordnung insgesamt zuspitzte und zugleich Irans Vielvölkerstaat-Dimension sichtbar machte.",
+        imageSrc:
+          "https://commons.wikimedia.org/wiki/Special:Redirect/file/Woman_Life_Freedom_-_52570240500.jpg",
+        imageAlt: "Protestbild in Solidarität mit Jina Mahsa Amini",
+        imageCaptionTitle: "Jina Mahsa Amini",
+        imageCaptionText: "Symbolfigur der Proteste seit September 2022",
         imageFit: "cover",
         imagePosition: "center top"
       }
@@ -1458,6 +1570,35 @@ const MODULES = [
         successThreshold: 2,
         modelAnswer:
           "Die Schweiz spielt eine besondere Rolle, weil sie als Schutzmacht die US-Interessen im Iran vertritt, Kommunikationskanäle zwischen beiden Staaten offenhält und bei konsularischen oder humanitären Fragen vermitteln kann."
+      },
+      {
+        id: "mq-republik-5",
+        title: "Jina Mahsa Amini",
+        type: "short-text",
+        challenge: "Zusatzcheck",
+        prompt:
+          "Warum löste der Tod von Jina Mahsa Amini eine Protestwelle aus, die weit über die Kopftuchfrage hinausging?",
+        help:
+          "Verbinde Sittenpolizei, Frauenrechte, Regimekritik und die kurdische Dimension.",
+        placeholder: "Die Proteste gingen weit über die Kopftuchfrage hinaus, weil ...",
+        sourceIds: ["r-republik-jina", "r-republik-srf", "r-republik-arte-playlist", "r-republik-bpb"],
+        conceptGroups: [
+          {
+            label: "es ging um Staatsgewalt und Repression",
+            variants: ["staatsgewalt", "repression", "polizeigewahrsam", "sittenpolizei", "gewalt", "regime"]
+          },
+          {
+            label: "es ging um Frauenrechte und Freiheit",
+            variants: ["frauenrechte", "freiheit", "frau leben freiheit", "körper", "selbstbestimmung", "unterdrückung"]
+          },
+          {
+            label: "die kurdische oder multiethnische Dimension wurde sichtbar",
+            variants: ["kurdisch", "kurdistan", "vielvölkerstaat", "minderheiten", "ethnische dimension", "peripherie"]
+          }
+        ],
+        successThreshold: 2,
+        modelAnswer:
+          "Die Proteste gingen weit über die Kopftuchfrage hinaus, weil sie sich gegen Staatsgewalt, die Kontrolle über Frauen und die gesamte politische Ordnung richteten. Zugleich machte der Fall der kurdischen Iranerin Jina Mahsa Amini die multiethnische Dimension Irans sichtbar."
       }
     ],
     resources: [
@@ -1544,6 +1685,34 @@ const MODULES = [
           "Die Quelle ist wichtig, weil sie die Schweizer Vermittlungsrolle nicht nur erwähnt, sondern institutionell erklärt.",
         didacticUse:
           "Einsetzen, wenn die Lernenden verstehen sollen, wie trotz abgebrochener Beziehungen minimale Diplomatie und konsularische Hilfe weiterlaufen können."
+      },
+      {
+        id: "r-republik-jina",
+        bucket: "Zusatzquellen: Proteste und Gesellschaft",
+        type: "Website",
+        title: "bpb: Anhaltende Proteste nach dem Tod von Jina Mahsa Amini",
+        focus:
+          "Hintergrund zu Jina Mahsa Amini, den Protesten seit September 2022, der Bewegung Frau, Leben, Freiheit und der Reaktion des Regimes.",
+        link: "https://www.bpb.de/kurz-knapp/hintergrund-aktuell/514577/iran-anhaltende-proteste-nach-dem-tod-von-jina-mahsa-amini/",
+        tags: ["bpb", "Proteste", "Gesellschaft"],
+        selectionNote:
+          "Die Quelle ist wichtig, weil sie das Ereignis um Jina Mahsa Amini als historischen Einschnitt für die jüngste Protestphase erklärt.",
+        didacticUse:
+          "Einsetzen, wenn die Gegenwart Irans über Frauenrechte, Staatsgewalt und gesellschaftliche Mobilisierung erschlossen werden soll."
+      },
+      {
+        id: "r-republik-srf",
+        bucket: "Zusatzquellen: Proteste und Gesellschaft",
+        type: "Video",
+        title: "SRF: Repression gegen Frauen ohne Kopftuch im Iran",
+        focus:
+          "Fernsehbeitrag zu Repression gegen Frauen ohne Kopftuch, verschärften Gesetzen und dem anhaltenden gesellschaftlichen Widerstand im Iran.",
+        link: "https://www.srf.ch/play/tv/10-vor-10/video/fokus-repression-gegen-frauen-ohne-kopftuch-im-iran?urn=urn:srf:video:9df52a0d-f934-4da4-bfd1-d9de0f9be11e",
+        tags: ["SRF", "Video", "Frauenrechte"],
+        selectionNote:
+          "Die Quelle ist besonders nützlich, weil sie die Repressionsfrage gegen Frauen knapp, anschaulich und sehr gegenwartsnah bündelt.",
+        didacticUse:
+          "Als Ergänzung zu Jina Mahsa Amini und Frau-Leben-Freiheit einsetzen, wenn Alltagskontrolle, Staatsgewalt und gesellschaftlicher Widerstand herausgearbeitet werden sollen."
       }
     ],
     questions: [
@@ -1796,6 +1965,62 @@ const MODULES = [
         successThreshold: 2,
         modelAnswer:
           "Die Schweiz vertritt als Schutzmacht die US-Interessen im Iran, weil die direkten Beziehungen zwischen Washington und Teheran nach Revolution und Geiselkrise abgebrochen wurden. Gerade deshalb ist sie als Kommunikationskanal, für konsularische Aufgaben und bei humanitären Vermittlungen besonders wichtig."
+      },
+      {
+        id: "q-republik-9",
+        type: "short-text",
+        challenge: "Gesellschaft und Protest",
+        prompt:
+          "Warum war der Fall Jina Mahsa Amini auch deshalb so bedeutsam, weil er Iran als Vielvölkerstaat sichtbar machte?",
+        help:
+          "Verbinde ihre kurdische Herkunft mit landesweiter Solidarität und allgemeinen Forderungen nach Freiheit.",
+        placeholder: "Der Fall war auch deshalb bedeutsam, weil ...",
+        sourceIds: ["r-republik-jina", "r-republik-srf", "r-perserreich-vielvoelkerstaat", "r-republik-arte-playlist"],
+        conceptGroups: [
+          {
+            label: "Jina Mahsa Amini war Kurdin",
+            variants: ["kurdin", "kurdisch", "kurdistan", "jina", "mahsa amini", "provinz kurdistan"]
+          },
+          {
+            label: "Proteste gingen über eine einzelne Region hinaus",
+            variants: ["landesweit", "solidarität", "verschiedene regionen", "viele städte", "überregional", "gesamtes land"]
+          },
+          {
+            label: "ethnische Vielfalt und gemeinsame Regimekritik trafen zusammen",
+            variants: ["vielvölkerstaat", "ethnische vielfalt", "gemeinsame regimekritik", "minderheiten", "frau leben freiheit", "gemeinsame forderungen"]
+          }
+        ],
+        successThreshold: 2,
+        modelAnswer:
+          "Der Fall war auch deshalb bedeutsam, weil Jina Mahsa Amini Kurdin war und ihr Tod zeigte, dass Fragen von Geschlecht, Staatsgewalt und ethnischer Marginalisierung zusammenhängen. Zugleich entstanden daraus landesweite Solidaritäten über regionale und ethnische Grenzen hinweg."
+      },
+      {
+        id: "q-republik-10",
+        type: "short-text",
+        challenge: "Alltag und Repression",
+        prompt:
+          "Was zeigt der SRF-Beitrag über den Zusammenhang von Alltagskontrolle, Frauenrechten und politischer Herrschaft im Iran?",
+        help:
+          "Verbinde Kopftuchkontrolle, Gesetzesverschärfung und gesellschaftlichen Widerstand.",
+        placeholder: "Der Beitrag zeigt, dass ...",
+        sourceIds: ["r-republik-srf", "r-republik-jina", "r-republik-bpb"],
+        conceptGroups: [
+          {
+            label: "der Staat greift über Alltagsregeln in Freiheit ein",
+            variants: ["alltagskontrolle", "kopftuch", "staatliche kontrolle", "freiheit", "körper", "vorschriften"]
+          },
+          {
+            label: "Repression ist politisch organisiert",
+            variants: ["repression", "gesetze", "strafen", "sittenpolizei", "staat", "herrschaft"]
+          },
+          {
+            label: "gesellschaftlicher Widerstand bleibt bestehen",
+            variants: ["widerstand", "frauen", "proteste", "nicht aufgeben", "gesellschaft", "freiheit verteidigen"]
+          }
+        ],
+        successThreshold: 2,
+        modelAnswer:
+          "Der Beitrag zeigt, dass der iranische Staat über Alltagsregeln wie das Kopftuch tief in Freiheit und Körperpolitik eingreift, dass diese Repression politisch organisiert ist und dass gerade junge Frauen und Teile der Gesellschaft dem weiter Widerstand entgegensetzen."
       }
     ]
   }

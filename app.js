@@ -876,14 +876,20 @@ function renderModuleHeader(module) {
                 .map(
                   (actor) => `
                     <article class="actor-card">
-                      <img
-                        class="actor-image"
-                        src="${escapeHtml(actor.imageSrc)}"
-                        alt="${escapeHtml(actor.imageAlt || actor.name)}"
-                        loading="lazy"
-                        ${getImageErrorAttributes("card")}
-                        ${getImageStyleAttribute(actor)}
-                      />
+                      <figure class="actor-media">
+                        <img
+                          class="actor-image"
+                          src="${escapeHtml(actor.imageSrc)}"
+                          alt="${escapeHtml(actor.imageAlt || actor.name)}"
+                          loading="lazy"
+                          ${getImageErrorAttributes("card")}
+                          ${getImageStyleAttribute(actor)}
+                        />
+                        <figcaption class="actor-image-caption">
+                          <strong>${escapeHtml(actor.imageCaptionTitle || actor.name)}</strong>
+                          <span>${escapeHtml(actor.imageCaptionText || actor.role || "")}</span>
+                        </figcaption>
+                      </figure>
                       <div class="actor-copy">
                         <h4>${escapeHtml(actor.name)}</h4>
                         <p class="actor-role">${escapeHtml(actor.role)}</p>

@@ -768,6 +768,12 @@ a {
   grid-template-columns: 1fr;
 }
 
+.actor-media {
+  margin: 0;
+  display: grid;
+  gap: 8px;
+}
+
 .actor-image {
   width: 116px;
   height: 146px;
@@ -776,6 +782,20 @@ a {
   border-radius: 14px;
   border: 1px solid rgba(28, 24, 21, 0.08);
   background: rgba(241, 236, 228, 0.95);
+}
+
+.actor-image-caption {
+  display: grid;
+  gap: 4px;
+  margin: 0;
+  font-size: 0.78rem;
+  line-height: 1.35;
+  color: var(--ink-soft);
+}
+
+.actor-image-caption strong {
+  color: var(--ink-strong);
+  font-size: 0.82rem;
 }
 
 .actor-copy h4 {
