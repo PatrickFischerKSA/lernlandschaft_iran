@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iran - Lernlandschaft</title>
+    <meta
+      name="description"
+      content="Interaktive Lernlandschaft zu Iran: Perserreich, Mossadegh, Schah, Islamische Revolution, geopolitische Bedeutung und Gegenwartsanalyse."
+    />
+    <meta name="theme-color" content="#6b3a2c" />
+    <meta property="og:title" content="Iran - Lernlandschaft" />
+    <meta
+      property="og:description"
+      content="Vier digitale Stationen zu Geschichte, Konflikten, Kultur und Geopolitik Irans mit Sofortkorrektur, Transferfragen und Update-Kompass."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://i.ytimg.com/vi/6FlPHpCEwL8/hqdefault.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Iran - Lernlandschaft" />
+    <meta
+      name="twitter:description"
+      content="Lernlandschaft zu Iran zwischen Perserreich, Mossadegh, Schah, Revolution 1979 und Gegenwart."
+    />
+    <meta name="twitter:image" content="https://i.ytimg.com/vi/6FlPHpCEwL8/hqdefault.jpg" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="styles.css?v=20260408iran" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero panel">
+        <div class="hero-copy">
+          <p class="eyebrow">Lernlandschaft Geschichte</p>
+          <h1>Iran</h1>
+          <p class="lead">
+            Diese Lernlandschaft verbindet historische Tiefenlinien, die Rolle von Öl, Monarchie,
+            Revolution, Islamischer Republik und regionaler Machtpolitik zu einer vierteiligen
+            Lernroute. Die Stationen helfen dabei, Konflikte, kulturelle Bedeutung und
+            geopolitische Interessen zusammenzudenken und neue Entwicklungen eigenständig
+            einzuordnen.
+          </p>
+          <div class="hero-actions">
+            <button class="btn primary" id="start-route-button" type="button">Mit Station 1 beginnen</button>
+            <button class="btn ghost" id="open-first-open-button" type="button">Direkt zur ersten Transferfrage</button>
+            <button class="btn ghost" id="teacher-mode-button" type="button">Lehrer*innenzugang</button>
+          </div>
+        </div>
+
+        <aside class="hero-note">
+          <div class="note-card">
+            <p class="note-label">Leitfrage</p>
+            <p>
+              Wie wurde Iran von einem alten Kultur- und Machtzentrum über Monarchie und
+              Staatsstreich zur Islamischen Republik, und warum prägt das Land bis heute Konflikte
+              im Nahen Osten und darüber hinaus?
+            </p>
+          </div>
+          <div class="note-card">
+            <p class="note-label">Arbeitsweise</p>
+            <p>
+              Zuerst Material sichten, dann Schlüsselbegriffe sichern, anschließend Entwicklungen
+              deuten. Kurze Freitextantworten werden mit Synonymfeldern geprüft; Transferaufgaben
+              geben gestuftes Sofortfeedback.
+            </p>
+          </div>
+          <div class="note-card">
+            <p class="note-label">Update-Kompass</p>
+            <p>
+              Die letzte Station ist so gebaut, dass neue Iran-Meldungen laufend ergänzt und an
+              vier Achsen geprüft werden können: Machtordnung, Gesellschaft, Religion und
+              Geopolitik.
+            </p>
+          </div>
+        </aside>
+      </header>
+
+      <section class="panel teacher-access-panel hidden" id="teacher-access-panel"></section>
+
+      <section class="dashboard">
+        <div class="stats-grid" id="stats-grid"></div>
+        <div class="panel legend-card">
+          <p class="eyebrow">Fragemodi</p>
+          <div class="legend-list">
+            <div>
+              <span class="legend-chip legend-fact">Kurze Freitexte</span>
+              <p>Begriffe, Zusammenhänge und sinnverwandte Formulierungen werden sofort geprüft</p>
+            </div>
+            <div>
+              <span class="legend-chip legend-compare">Ordnen</span>
+              <p>Drag-and-drop-Aufgaben sichern Chronologie und Entwicklungslinien</p>
+            </div>
+            <div>
+              <span class="legend-chip legend-transfer">Transfer</span>
+              <p>Offene Antworten verbinden Materialbezug, Urteil und Gegenwartsdeutung</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="workspace">
+        <aside class="panel module-rail">
+          <div class="rail-head">
+            <p class="eyebrow">Stationen</p>
+            <h2>Geschichte und Gegenwart</h2>
+          </div>
+          <div id="module-nav" class="module-nav"></div>
+        </aside>
+
+        <main class="focus-column">
+          <section class="panel module-header" id="module-header"></section>
+
+          <section class="panel hidden" id="resource-panel" aria-hidden="true">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Materialpool</p>
+                <h2>Ressourcen der Station</h2>
+              </div>
+              <p class="section-copy">
+                Alle eingebauten Materialien dieser Station sind hier nach Typ geordnet.
+                Videoquellen öffnen in YouTube, Hintergrundtexte in der bpb. Die letzte Station
+                enthält zusätzlich einen Materialpfad für tagesaktuelle Erweiterungen.
+              </p>
+            </div>
+            <div id="resource-groups" class="resource-groups"></div>
+          </section>
+
+          <section class="panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Fragenraum</p>
+                <h2>Vertiefungsfragen</h2>
+              </div>
+              <p class="section-copy">
+                Nach jeder Antwort erscheint sofort eine Rückmeldung. So lassen sich historische
+                Kenntnisse, Urteilskraft und aktuelle Einordnung Schritt für Schritt aufbauen.
+              </p>
+            </div>
+            <div id="question-list" class="question-list"></div>
+          </section>
+
+          <section class="panel teacher-panel hidden" id="teacher-panel"></section>
+        </main>
+      </div>
+    </div>
+
+    <div id="mini-question-modal" class="mini-question-modal hidden" aria-hidden="true"></div>
+    <div id="source-modal" class="source-modal hidden" aria-hidden="true"></div>
+
+    <script src="data.js?v=20260408iran"></script>
+    <script src="app.js?v=20260408iran"></script>
+  </body>
+</html>
