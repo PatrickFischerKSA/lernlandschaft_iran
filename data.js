@@ -1642,6 +1642,35 @@ const MODULES = [
         successThreshold: 2,
         modelAnswer:
           "Die Proteste gingen weit über die Kopftuchfrage hinaus, weil sie sich gegen Staatsgewalt, die Kontrolle über Frauen und die gesamte politische Ordnung richteten. Zugleich machte der Fall der kurdischen Iranerin Jina Mahsa Amini die multiethnische Dimension Irans sichtbar."
+      },
+      {
+        id: "mq-republik-6",
+        title: "Mehrere Konfliktachsen",
+        type: "short-text",
+        challenge: "Zusatzcheck",
+        prompt:
+          "Warum reicht es nicht, Iran nur als außenpolitischen Gegner des Westens zu betrachten?",
+        help:
+          "Verbinde Außenpolitik mit Machtstrukturen, Frauenrechten, Jugend und inneren Konflikten.",
+        placeholder: "Es reicht nicht, Iran nur außenpolitisch zu betrachten, weil ...",
+        sourceIds: ["r-republik-apuz", "r-republik-bpb", "r-republik-zdf"],
+        conceptGroups: [
+          {
+            label: "innere Machtstrukturen sind wichtig",
+            variants: ["machtstrukturen", "innenpolitik", "herrschaft", "regime", "staat", "institutionen"]
+          },
+          {
+            label: "gesellschaftliche Konflikte spielen mit hinein",
+            variants: ["gesellschaft", "frauenrechte", "jugend", "proteste", "alltag", "soziale konflikte"]
+          },
+          {
+            label: "Außenpolitik ist nur eine Ebene",
+            variants: ["außenpolitik", "nicht nur westen", "nur eine ebene", "mehrere ebenen", "komplex", "nicht reduzieren"]
+          }
+        ],
+        successThreshold: 2,
+        modelAnswer:
+          "Es reicht nicht, Iran nur außenpolitisch zu betrachten, weil das Land zugleich von inneren Machtstrukturen, gesellschaftlichen Konflikten, Frauenrechten und Generationenfragen geprägt ist. Außenpolitik ist wichtig, aber nur eine von mehreren Ebenen."
       }
     ],
     resources: [
@@ -1798,6 +1827,20 @@ const MODULES = [
           "Die Quelle eignet sich, weil sie den Blick auf das Regime von heute zuspitzt und die Rolle Chameneis ausdrücklich in den Mittelpunkt stellt.",
         didacticUse:
           "Vor allem für Gegenwartsfragen zum Regime, zu Herrschaftssicherung und zur Angst vor gesellschaftlichem Kontrollverlust nutzen."
+      },
+      {
+        id: "r-republik-apuz",
+        bucket: "Schriftliche Vertiefung: Gesellschaft, Macht und Außenpolitik",
+        type: "PDF",
+        title: "APuZ: Iran",
+        focus:
+          "Themenheft mit Beiträgen zu Außenpolitik, Machtstrukturen, Chomeinismus, Frauenrechten, Jugend und Blogosphäre im Iran.",
+        link: "assets/materials/apuz-iran-2009.pdf",
+        tags: ["PDF", "APuZ", "Iran"],
+        selectionNote:
+          "Das Heft ist besonders brauchbar, weil es Iran nicht auf eine einzige Konfliktlinie reduziert, sondern Staat, Gesellschaft und Außenpolitik zusammenführt.",
+        didacticUse:
+          "Für schriftliche Sicherung nutzen, wenn mehrere Perspektiven auf die Islamische Republik knapp und sachlich zusammengeführt werden sollen."
       },
       {
         id: "r-republik-boesch",
@@ -2018,7 +2061,7 @@ const MODULES = [
         help:
           "Verbinde Herrschaft, Gesellschaft, Sicherheitslogik und Geopolitik.",
         placeholder: "Es wäre falsch, Iran nur religiös zu erklären, weil ...",
-        sourceIds: ["r-republik-zdf", "r-republik-terrax", "r-republik-bpb", "r-republik-arte-playlist", "r-republik-zeit-nirumand", "r-republik-kermani-chamenei"],
+        sourceIds: ["r-republik-zdf", "r-republik-terrax", "r-republik-bpb", "r-republik-arte-playlist", "r-republik-zeit-nirumand", "r-republik-kermani-chamenei", "r-republik-apuz"],
         conceptGroups: [
           {
             label: "politische Machtstrukturen sind entscheidend",
@@ -2036,6 +2079,34 @@ const MODULES = [
         successThreshold: 2,
         modelAnswer:
           "Es wäre falsch, Iran nur religiös zu erklären, weil politische Machtstrukturen, gesellschaftliche Konflikte und geopolitische Interessen die Lage genauso prägen. Religion ist wichtig, aber nur eine von mehreren Analyseachsen."
+      },
+      {
+        id: "q-republik-7b",
+        type: "short-text",
+        challenge: "Strukturanalyse",
+        prompt:
+          "Welche Spannungen innerhalb der iranischen Gesellschaft und Herrschaftsordnung werden im APuZ-Heft besonders sichtbar?",
+        help:
+          "Nenne mindestens zwei Ebenen, zum Beispiel Machtstruktur, Frauenrechte, Jugend oder Außenpolitik.",
+        placeholder: "Im Heft werden besonders sichtbar, dass ...",
+        sourceIds: ["r-republik-apuz", "r-republik-bpb", "r-republik-zeit-nirumand"],
+        conceptGroups: [
+          {
+            label: "Spannung zwischen Herrschaft und Gesellschaft",
+            variants: ["herrschaft", "gesellschaft", "machtstrukturen", "kontrolle", "regime", "innenpolitik"]
+          },
+          {
+            label: "Frauen oder Jugend als Konfliktfeld",
+            variants: ["frauenrechte", "jugend", "generation", "junge leute", "gesellschaftlicher wandel", "alltag"]
+          },
+          {
+            label: "Außenpolitik ist mit inneren Konflikten verbunden",
+            variants: ["außenpolitik", "außenpolitischer akteur", "nicht getrennt", "verknüpft", "innen und außen", "westen"]
+          }
+        ],
+        successThreshold: 2,
+        modelAnswer:
+          "Im Heft wird sichtbar, dass Iran zugleich von Machtfragen des Regimes, gesellschaftlichen Konflikten um Frauenrechte und Jugend sowie von außenpolitischen Spannungen geprägt ist. Gerade diese Verbindung zeigt, wie eng innere und äußere Konfliktlinien zusammenhängen."
       },
       {
         id: "q-republik-8",
