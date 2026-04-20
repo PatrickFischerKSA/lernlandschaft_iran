@@ -5,13 +5,13 @@ const MODULES = [
     title: "Perserreich, Monarchie und geopolitische Lage",
     era: "Antike bis 1941",
     intro:
-      "Diese Auftaktstation zeigt Iran nicht nur als aktuellen Krisenraum, sondern als historischen Kultur- und Machtbereich zwischen Mesopotamien, Zentralasien, Kaukasus und Indischem Ozean. Sie führt vom Perserreich über Islamisierung, schiitische Prägung und ethnische Vielfalt bis zu Reza Schah.",
+      "Diese Station behandelt die historischen Grundlagen Irans. Sie reicht vom Perserreich über Islamisierung und schiitische Prägung bis zur Monarchie unter Reza Schah. Wichtig ist dabei auch, dass Iran kein ethnisch einheitiger Staat ist.",
     goal:
-      "Du kannst erklären, warum Iran historisch, kulturell und geopolitisch weit mehr ist als nur ein aktueller Konfliktherd.",
+      "Du kannst erklären, warum Iran historisch, gesellschaftlich und geopolitisch nicht auf die aktuelle Krisenlage reduziert werden kann.",
     route:
-      "Starte mit dem Terra-X-Überblick, sichere dann mit der ARTE-Playlist die großen Linien und nutze den bpb-Text als Brücke zur Moderne. Bearbeite zuerst Kultur und Raumlage, dann Monarchie und frühe Modernisierung.",
+      "Arbeite zuerst mit dem Überblicksvideo. Nutze dann die ergänzenden Materialien für Raumlage, schiitische Prägung und den Übergang zur Moderne.",
     teacherNote:
-      "Wichtig ist, Iran nicht vorschnell auf Islamische Republik, Atomfrage oder Nahostkrieg zu verkürzen. Die Lernenden sollen zuerst kulturelle Tiefenlinien und die lange Machtgeschichte verstehen.",
+      "Die Station soll deutlich machen, dass Iran eine lange eigene Geschichte hat. Ohne diese Vorgeschichte bleiben spätere Konflikte schwer verständlich.",
     teacherToolkit: {
       duration: "35 bis 45 Minuten",
       socialForms: [
@@ -32,9 +32,9 @@ const MODULES = [
         "Iraner und Perser seien dasselbe"
       ],
       product:
-        "Begriffsnetz zu Kultur, Raumlage und Machtgeschichte oder ein begründeter Kurztext zur Bedeutung Irans.",
+        "Begriffsnetz zu Raumlage, Religion und Machtgeschichte oder kurzer Sachtext zur Bedeutung Irans.",
       extension:
-        "Aktuelle Karten oder Meldungen zur Straße von Hormus ergänzen und mit historischen Raumvorstellungen verbinden."
+        "Aktuelle Meldungen zur Straße von Hormus oder zu Minderheitenfragen mit der historischen Raumlage verbinden."
     },
     visual: {
       src:
@@ -443,13 +443,13 @@ const MODULES = [
     title: "Mossadegh, Öl und Staatsstreich",
     era: "1941 bis 1953",
     intro:
-      "Diese Station behandelt die Besatzung Irans im Zweiten Weltkrieg, den Aufstieg Mohammad Mossadeghs, die Verstaatlichung der Ölindustrie und den Staatsstreich von 1953. Im Zentrum steht die Frage, wie eng Innenpolitik, Rohstoffe und ausländische Interessen verbunden waren.",
+      "Diese Station behandelt die Besatzung Irans im Zweiten Weltkrieg, den Aufstieg Mossadeghs, die Verstaatlichung der Ölindustrie und den Putsch von 1953. Im Mittelpunkt steht das Verhältnis von Innenpolitik, Rohstoffen und ausländischem Einfluss.",
     goal:
-      "Du kannst erklären, warum Mossadegh bis heute für Souveränität, Demokratiehoffnung und das Misstrauen gegenüber westlicher Einflussnahme steht.",
+      "Du kannst erklären, warum Mossadegh bis heute für Souveränität, parlamentarische Politik und das Misstrauen gegenüber dem Westen steht.",
     route:
-      "Starte mit dem ZDF-Video zur langen Konfliktgeschichte mit den USA, sichere dann zentrale Daten mit dem bpb-Text und nutze den Terra-X-Überblick für den größeren Zusammenhang. Arbeite zuerst Machtwechsel und Öl, dann den Putsch und seine Folgen.",
+      "Beginne mit dem ZDF-Beitrag, sichere dann die Entwicklung mit dem bpb-Text und ordne das Thema anschließend mit dem Überblicksvideo ein.",
     teacherNote:
-      "Didaktisch zentral ist hier die Verbindung von Demokratiegeschichte und Geopolitik. Die Lernenden sollen den Putsch nicht isoliert, sondern im Zusammenhang von Ölinteressen, Kaltem Krieg und Monarchie verstehen.",
+      "Der Putsch von 1953 sollte nicht isoliert behandelt werden. Entscheidend ist das Zusammenspiel von Ölfrage, Kaltem Krieg und Monarchie.",
     teacherToolkit: {
       duration: "40 bis 50 Minuten",
       socialForms: [
@@ -468,9 +468,9 @@ const MODULES = [
         "1953 habe keine Langzeitfolgen mehr für die Gegenwart"
       ],
       product:
-        "Kurzer Deutungstext dazu, was der Putsch von 1953 über Iran, Öl und ausländische Interessen zeigt.",
+        "Kurzer Sachtext dazu, was der Putsch von 1953 über Iran, Öl und ausländische Interessen zeigt.",
       extension:
-        "Aktuelle Debatten über Souveränität oder Sanktionen mit 1953 in Beziehung setzen."
+        "Aktuelle Debatten über Sanktionen oder ausländischen Einfluss mit 1953 vergleichen."
     },
     visual: {
       src:
@@ -855,13 +855,13 @@ const MODULES = [
     title: "Mohammad Reza Pahlavi: Modernisierung und Revolution",
     era: "1953 bis 1979",
     intro:
-      "Diese Station behandelt die Phase nach dem Putsch: den ausgebauten Schah-Staat, die Weiße Revolution, soziale und kulturelle Spannungen, den Repressionsapparat und den Weg in die Revolution. Im Zentrum steht das Spannungsfeld von Modernisierung, Abhängigkeit und Autoritarismus.",
+      "Diese Station behandelt die Zeit nach dem Putsch: den Ausbau des Schah-Staates, die Weiße Revolution, gesellschaftliche Spannungen, Repression und den Weg zur Revolution. Im Zentrum steht der Zusammenhang von Modernisierung, Abhängigkeit und autoritärer Herrschaft.",
     goal:
-      "Du kannst erklären, warum der Schah zugleich für Modernisierung und für autoritäre Herrschaft steht und weshalb sich so viele unterschiedliche Gruppen gegen ihn wandten.",
+      "Du kannst erklären, warum der Schah zugleich für Modernisierung und für autoritäre Herrschaft steht und warum sich so viele unterschiedliche Gruppen gegen ihn wandten.",
     route:
-      "Arbeite zuerst mit dem Terra-X-Überblick, sichere dann mit dem bpb-Text die Reformen und Eskalationspunkte und nutze das ZDF-Video für den größeren außenpolitischen Zusammenhang. Bearbeite erst Herrschaft und Reformen, dann Opposition und Revolutionsdynamik.",
+      "Arbeite zuerst mit dem Überblicksvideo. Nutze danach den bpb-Text für Reformen und Eskalation und das ZDF-Video für die außenpolitische Einordnung.",
     teacherNote:
-      "Wichtig ist, die Herrschaft des Schahs nicht eindimensional zu bewerten. Die Lernenden sollen erkennen, dass Modernisierung und Repression gleichzeitig existierten und sich teilweise gegenseitig verstärkten.",
+      "Die Herrschaft des Schahs sollte nicht einseitig bewertet werden. Reformen und Repression gehörten zusammen.",
     teacherToolkit: {
       duration: "45 bis 55 Minuten",
       socialForms: [
@@ -880,9 +880,9 @@ const MODULES = [
         "Nur arme oder nur religiöse Gruppen hätten opponiert"
       ],
       product:
-        "Abwägender Kurztext dazu, warum die Herrschaft des Schahs trotz Reformen zerbrach.",
+        "Kurzer Urteilstext dazu, warum die Herrschaft des Schahs trotz Reformen zerbrach.",
       extension:
-        "Vergleich zwischen Modernisierung von oben und politischer Beteiligung von unten diskutieren."
+        "Vergleich zwischen Modernisierung von oben und politischer Beteiligung von unten."
     },
     visual: {
       src:
@@ -1026,6 +1026,35 @@ const MODULES = [
         successThreshold: 2,
         modelAnswer:
           "Die Westbindung wurde zum Angriffspunkt, weil der Schah vielen als abhängig und fremdbestimmt erschien, dadurch an Legitimität verlor und seine Nähe zum Westen im Schatten des Putsches gegen Mossadegh zusätzlich belastet war."
+      },
+      {
+        id: "mq-pahlavi-4",
+        title: "Der Jetset-Schah",
+        type: "short-text",
+        challenge: "Zusatzcheck",
+        prompt:
+          "Warum schadete die Selbstdarstellung des Schahs als luxuriöser Herrscher seiner politischen Stellung?",
+        help:
+          "Verbinde Monarchieinszenierung, soziale Distanz und die Kritik an falschen Prioritäten.",
+        placeholder: "Die Selbstdarstellung schadete dem Schah, weil ...",
+        sourceIds: ["r-pahlavi-sonntagsblick", "r-pahlavi-bpb", "r-pahlavi-terrax"],
+        conceptGroups: [
+          {
+            label: "wirkte abgehoben oder elitär",
+            variants: ["abgehoben", "elitär", "luxus", "jetset", "fern von der bevölkerung", "prunk"]
+          },
+          {
+            label: "vergrößerte die Distanz zur Bevölkerung",
+            variants: ["distanz", "entfremdung", "bevölkerung", "unmut", "keine nähe", "unverständnis"]
+          },
+          {
+            label: "stand für falsche politische Prioritäten",
+            variants: ["falsche prioritäten", "selbstdarstellung", "inszenierung", "statt probleme lösen", "kritik", "unzufriedenheit"]
+          }
+        ],
+        successThreshold: 2,
+        modelAnswer:
+          "Die Selbstdarstellung schadete dem Schah, weil sie elitär und abgehoben wirkte, die Distanz zur Bevölkerung vergrößerte und den Eindruck verstärkte, dass die Monarchie eher auf Glanz als auf politische Glaubwürdigkeit setzte."
       }
     ],
     resources: [
@@ -1070,6 +1099,20 @@ const MODULES = [
           "Hilfreich, um die Rolle westlicher Unterstützung für den Schah mitzudenken.",
         didacticUse:
           "Vor allem für Transferfragen und Gegenwartsbezüge nutzen."
+      },
+      {
+        id: "r-pahlavi-sonntagsblick",
+        bucket: "Schriftliche Vertiefung: Monarchie und Wahrnehmung",
+        type: "PDF",
+        title: "SonntagsBlick: Der Jetset-Schah",
+        focus:
+          "Artikel zur öffentlichen Inszenierung Mohammad Reza Pahlavis, zu Luxus, Hofgesellschaft und dem Bild einer zunehmend abgehobenen Monarchie.",
+        link: "assets/materials/sonntagsblick-jetset-schah.pdf",
+        tags: ["PDF", "Schah", "Monarchie"],
+        selectionNote:
+          "Der Text ist nützlich, weil er die Monarchie nicht nur politisch, sondern auch über Habitus, Stil und Wahrnehmung erschließt.",
+        didacticUse:
+          "Für Aufgaben zur Distanz zwischen Regime und Bevölkerung oder zur Kritik an der Selbstdarstellung des Schahs verwenden."
       }
     ],
     questions: [
@@ -1110,7 +1153,7 @@ const MODULES = [
         help:
           "Verbinde Selbstdarstellung der Monarchie mit gesellschaftlicher Wahrnehmung.",
         placeholder: "Die Feiern wurden kritisiert, weil ...",
-        sourceIds: ["r-pahlavi-bpb", "r-pahlavi-terrax"],
+        sourceIds: ["r-pahlavi-bpb", "r-pahlavi-terrax", "r-pahlavi-sonntagsblick"],
         conceptGroups: [
           {
             label: "pompöse oder luxuriöse Selbstdarstellung",
@@ -1222,7 +1265,7 @@ const MODULES = [
           "Achte auf Abwägung statt Schwarz-Weiß-Urteil. Entscheidend ist die Spannung zwischen Reformversprechen und Herrschaftspraxis.",
         commonPitfall:
           "Viele Antworten listen nur Reformen oder nur Gewalt auf. Historisch wichtig ist, wie beides gleichzeitig existierte und die Revolution mit vorbereitete.",
-        sourceIds: ["r-pahlavi-terrax", "r-pahlavi-bpb", "r-pahlavi-zdf"],
+        sourceIds: ["r-pahlavi-terrax", "r-pahlavi-bpb", "r-pahlavi-zdf", "r-pahlavi-sonntagsblick"],
         minWords: 130,
         structureExpectations: {
           mandatory: ["thesis", "evidence", "comparison", "nuance", "conclusion"],
@@ -1275,13 +1318,13 @@ const MODULES = [
     title: "Chomeini, Islamische Republik und Gegenwart",
     era: "1979 bis heute",
     intro:
-      "Diese Station führt von der Revolution 1979 über Geiselnahme, Iran-Irak-Krieg, die neue Verfassung und Chomeinis Herrschaft bis zu Atomkonflikt, Sanktionen, Regionalpolitik, den Protesten nach dem Tod von Jina Mahsa Amini und aktuellen Spannungen. Sie ist zugleich als Update-Station gebaut, an die neue Meldungen angeschlossen werden können.",
+      "Diese Station reicht von der Revolution 1979 über Geiselnahme, Iran-Irak-Krieg und den Aufbau der Islamischen Republik bis zu Atomkonflikt, Regionalpolitik und den Protesten nach dem Tod von Jina Mahsa Amini.",
     goal:
-      "Du kannst die Grundlogik der Islamischen Republik erklären und neue Iran-Meldungen nach Herrschaft, Gesellschaft, Religion, Vielfalt und Geopolitik einordnen.",
+      "Du kannst die Grundstruktur der Islamischen Republik erklären und aktuelle Iran-Meldungen nach Herrschaft, Gesellschaft, Religion, Vielfalt und Geopolitik einordnen.",
     route:
-      "Beginne mit der ARTE-Doku zum Aufstieg des Islamismus, arbeite dann mit dem ZDF-Video zur langen Konfliktgeschichte mit den USA und sichere Schlüsselereignisse über den bpb-Text. Nutze zum Schluss die ARTE-Playlist als Update-Fenster für aktuelle Entwicklungen.",
+      "Beginne mit der ARTE-Doku zur Revolution. Nutze danach ZDF und bpb für Außenpolitik und Chronologie. Die weiteren Text- und Videoquellen vertiefen Reform, Repression und Proteste.",
     teacherNote:
-      "Diese Station sollte nicht nur auf Bedrohungsbilder reduziert werden. Die Lernenden sollen das politische System, die Konflikte mit dem Westen, gesellschaftliche Spannungen und die regionale Machtpolitik in ihrer Wechselwirkung verstehen.",
+      "Die Station soll das politische System, den Konflikt mit dem Westen, gesellschaftliche Spannungen und aktuelle Proteste zusammenführen.",
     teacherToolkit: {
       duration: "45 bis 60 Minuten",
       socialForms: [
@@ -1302,9 +1345,9 @@ const MODULES = [
         "die Proteste seit 2022 hätten nur mit dem Kopftuch zu tun gehabt"
       ],
       product:
-        "Lage-Check-Raster, in dem eine neue Meldung entlang der Achsen Herrschaft, Gesellschaft, Religion und Geopolitik eingeordnet wird.",
+        "Schema, mit dem eine aktuelle Iran-Meldung nach Herrschaft, Gesellschaft, Religion und Geopolitik eingeordnet wird.",
       extension:
-        "Eine neue Tagesmeldung auswählen und prüfen: Was ist neu, was ist Kontinuität, welche historischen Linien werden aktiviert?"
+        "Eine aktuelle Meldung auswählen und prüfen: Was ist neu, was ist Kontinuität?"
     },
     visual: {
       src:
@@ -1713,6 +1756,62 @@ const MODULES = [
           "Die Quelle ist besonders nützlich, weil sie die Repressionsfrage gegen Frauen knapp, anschaulich und sehr gegenwartsnah bündelt.",
         didacticUse:
           "Als Ergänzung zu Jina Mahsa Amini und Frau-Leben-Freiheit einsetzen, wenn Alltagskontrolle, Staatsgewalt und gesellschaftlicher Widerstand herausgearbeitet werden sollen."
+      },
+      {
+        id: "r-republik-zeit-nirumand",
+        bucket: "Schriftliche Vertiefung: Gegenwart und Deutung",
+        type: "Website",
+        title: "ZEIT: Bahman Nirumand – Die Revolution ist doch ein Ungeheuer",
+        focus:
+          "Gespräch mit Bahman Nirumand über Schah-Zeit, Revolution, Exil und den Blick auf das heutige Regime.",
+        link: "https://www.zeit.de/politik/ausland/2026-03/bahman-nirumand-iran-regime-revolution-68er",
+        tags: ["ZEIT", "Interview", "Gegenwart"],
+        selectionNote:
+          "Die Quelle ist nützlich, weil sie Biografie, Revolutionserfahrung und heutige Regimekritik miteinander verbindet.",
+        didacticUse:
+          "Geeignet für die Frage, wie sich Revolutionserbe, Exilerfahrung und Gegenwartsdeutung verbinden."
+      },
+      {
+        id: "r-republik-kermani-khomeini",
+        bucket: "Schriftliche Vertiefung: Gegenwart und Deutung",
+        type: "PDF",
+        title: "Navid Kermani über Ayatollah Khomeinis Erbe im Iran",
+        focus:
+          "Text zur Frage, wie Khomeinis Erbe die politische Kultur und die Gegenwart des Iran weiter prägt.",
+        link: "assets/materials/navid-kermani-khomeinis-erbe.pdf",
+        tags: ["PDF", "Navid Kermani", "Khomeini"],
+        selectionNote:
+          "Die Quelle ist sinnvoll, weil sie Khomeinis Wirkung nicht nur historisch, sondern auch ideen- und kulturgeschichtlich betrachtet.",
+        didacticUse:
+          "Besonders brauchbar für die Einordnung von Khomeinis Nachwirkung auf Staat, Gesellschaft und Opposition."
+      },
+      {
+        id: "r-republik-kermani-chamenei",
+        bucket: "Schriftliche Vertiefung: Gegenwart und Deutung",
+        type: "Website",
+        title: "Navid Kermani: Was, wenn keine Furcht mehr Ajatollah Chameini zurückhält?",
+        focus:
+          "Gastbeitrag zur Gegenwart des Regimes, zu Chameneis Macht und zur Frage, was das System noch zusammenhält.",
+        link: "assets/materials/navid-kermani-chamenei-sz.mhtml",
+        tags: ["Archiv", "Navid Kermani", "Chamenei"],
+        selectionNote:
+          "Die Quelle eignet sich, weil sie den Blick auf das Regime von heute zuspitzt und die Rolle Chameneis ausdrücklich in den Mittelpunkt stellt.",
+        didacticUse:
+          "Vor allem für Gegenwartsfragen zum Regime, zu Herrschaftssicherung und zur Angst vor gesellschaftlichem Kontrollverlust nutzen."
+      },
+      {
+        id: "r-republik-boesch",
+        bucket: "Schriftliche Vertiefung: Revolution und Bruch",
+        type: "PDF",
+        title: "Frank Bösch: Zwischen Schah und Khomeini",
+        focus:
+          "Text zum Übergang von Monarchie zu Revolution und dazu, wie der Umbruch im Iran in der Bundesrepublik wahrgenommen und politisch eingeordnet wurde.",
+        link: "assets/materials/boesch-zwischen-schah-und-khomeini.pdf",
+        tags: ["PDF", "Frank Bösch", "Revolution"],
+        selectionNote:
+          "Der Text ist wichtig, weil er den Umbruch von 1979 nicht als bloßen Führungswechsel, sondern als politischen und internationalen Einschnitt lesbar macht.",
+        didacticUse:
+          "Für Fragen nutzen, die erklären sollen, warum der Sturz des Schahs und der Aufstieg Chomeinis auch außerhalb Irans aufmerksam verfolgt wurden."
       }
     ],
     questions: [
@@ -1861,7 +1960,7 @@ const MODULES = [
         help:
           "Verbinde Reformhoffnung, gesellschaftliche Öffnung und die Grenzen des Systems.",
         placeholder: "Chatami ist wichtig, weil ...",
-        sourceIds: ["r-republik-bpb", "r-republik-zdf", "r-republik-arte-playlist"],
+        sourceIds: ["r-republik-bpb", "r-republik-zdf", "r-republik-arte-playlist", "r-republik-zeit-nirumand"],
         conceptGroups: [
           {
             label: "steht für Reformen oder Öffnung",
@@ -1919,7 +2018,7 @@ const MODULES = [
         help:
           "Verbinde Herrschaft, Gesellschaft, Sicherheitslogik und Geopolitik.",
         placeholder: "Es wäre falsch, Iran nur religiös zu erklären, weil ...",
-        sourceIds: ["r-republik-zdf", "r-republik-terrax", "r-republik-bpb", "r-republik-arte-playlist"],
+        sourceIds: ["r-republik-zdf", "r-republik-terrax", "r-republik-bpb", "r-republik-arte-playlist", "r-republik-zeit-nirumand", "r-republik-kermani-chamenei"],
         conceptGroups: [
           {
             label: "politische Machtstrukturen sind entscheidend",
@@ -1967,6 +2066,62 @@ const MODULES = [
           "Die Schweiz vertritt als Schutzmacht die US-Interessen im Iran, weil die direkten Beziehungen zwischen Washington und Teheran nach Revolution und Geiselkrise abgebrochen wurden. Gerade deshalb ist sie als Kommunikationskanal, für konsularische Aufgaben und bei humanitären Vermittlungen besonders wichtig."
       },
       {
+        id: "q-republik-8b",
+        type: "short-text",
+        challenge: "Deutung",
+        prompt:
+          "Warum ist Khomeinis Erbe für das Verständnis des heutigen Iran noch immer wichtig?",
+        help:
+          "Verbinde Gründungsphase, politische Kultur und die bis heute wirksamen Machtstrukturen.",
+        placeholder: "Khomeinis Erbe ist bis heute wichtig, weil ...",
+        sourceIds: ["r-republik-kermani-khomeini", "r-republik-bpb", "r-republik-arte"],
+        conceptGroups: [
+          {
+            label: "Khomeini prägte die Grundordnung des Systems",
+            variants: ["grundordnung", "islamische republik", "verfassung", "oberster führer", "herrschaftsordnung"]
+          },
+          {
+            label: "sein Denken wirkt politisch und ideologisch weiter",
+            variants: ["erbe", "ideologie", "politische kultur", "wirkt weiter", "bis heute", "denken"]
+          },
+          {
+            label: "spätere Konflikte lassen sich so besser verstehen",
+            variants: ["gegenwart", "proteste", "repression", "macht", "konflikte", "heute"]
+          }
+        ],
+        successThreshold: 2,
+        modelAnswer:
+          "Khomeinis Erbe ist bis heute wichtig, weil er die Grundordnung der Islamischen Republik geprägt hat und zentrale Vorstellungen von Herrschaft, Religion und politischer Legitimation weiterwirken. Viele aktuelle Konflikte lassen sich ohne diese Vorgeschichte nicht verstehen."
+      },
+      {
+        id: "q-republik-8c",
+        type: "short-text",
+        challenge: "Revolutionsanalyse",
+        prompt:
+          "Warum war der Übergang vom Schah zu Chomeini mehr als ein bloßer Machtwechsel an der Spitze?",
+        help:
+          "Verbinde Monarchieende, neue Staatsordnung und die internationale Bedeutung des Umbruchs.",
+        placeholder: "Der Übergang war mehr als ein bloßer Machtwechsel, weil ...",
+        sourceIds: ["r-republik-boesch", "r-republik-arte", "r-republik-bpb"],
+        conceptGroups: [
+          {
+            label: "die Monarchie wurde durch eine neue Staatsordnung ersetzt",
+            variants: ["monarchieende", "neue staatsordnung", "islamische republik", "systemwechsel", "grundordnung"]
+          },
+          {
+            label: "Herrschaft und Legitimation veränderten sich grundlegend",
+            variants: ["legitimation", "religiöse führung", "chomeini", "verfassung", "machtstruktur", "herrschaft"]
+          },
+          {
+            label: "der Umbruch hatte internationale Wirkung",
+            variants: ["international", "bundesrepublik", "außenpolitik", "westen", "wahrnehmung", "einschnitt"]
+          }
+        ],
+        successThreshold: 2,
+        modelAnswer:
+          "Der Übergang war mehr als ein bloßer Machtwechsel, weil nicht nur eine Person ersetzt wurde, sondern die Monarchie durch eine neue Staatsordnung mit religiöser Führung abgelöst wurde. Zugleich war der Umbruch international bedeutsam, weil er die politische Wahrnehmung Irans im Westen grundlegend veränderte."
+      },
+      {
         id: "q-republik-9",
         type: "short-text",
         challenge: "Gesellschaft und Protest",
@@ -1993,6 +2148,34 @@ const MODULES = [
         successThreshold: 2,
         modelAnswer:
           "Der Fall war auch deshalb bedeutsam, weil Jina Mahsa Amini Kurdin war und ihr Tod zeigte, dass Fragen von Geschlecht, Staatsgewalt und ethnischer Marginalisierung zusammenhängen. Zugleich entstanden daraus landesweite Solidaritäten über regionale und ethnische Grenzen hinweg."
+      },
+      {
+        id: "q-republik-9b",
+        type: "short-text",
+        challenge: "Regimeanalyse",
+        prompt:
+          "Welche Rolle spielt Ali Chamenei für die Stabilität des Regimes in der Gegenwart?",
+        help:
+          "Verbinde seine Stellung als Oberster Führer mit Sicherheitsapparat, Legitimation und Herrschaftssicherung.",
+        placeholder: "Ali Chamenei ist für die Stabilität des Regimes wichtig, weil ...",
+        sourceIds: ["r-republik-kermani-chamenei", "r-republik-zeit-nirumand", "r-republik-bpb"],
+        conceptGroups: [
+          {
+            label: "er steht an der Spitze des Systems",
+            variants: ["oberster führer", "spitze", "machtzentrum", "an der spitze", "system"]
+          },
+          {
+            label: "er verbindet politische und sicherheitspolitische Macht",
+            variants: ["sicherheitsapparat", "revolutionsgarden", "herrschaftssicherung", "kontrolle", "macht"]
+          },
+          {
+            label: "seine Rolle erklärt Stabilität und Krisen zugleich",
+            variants: ["stabilität", "krise", "legitimation", "gegenwart", "regime", "zusammenhalt"]
+          }
+        ],
+        successThreshold: 2,
+        modelAnswer:
+          "Ali Chamenei ist für die Stabilität des Regimes wichtig, weil er als Oberster Führer an der Spitze der Machtordnung steht und politische, religiöse und sicherheitspolitische Kontrolle bündelt. Gerade deshalb erklärt seine Rolle sowohl die Stabilität als auch die Krise des Systems."
       },
       {
         id: "q-republik-10",
